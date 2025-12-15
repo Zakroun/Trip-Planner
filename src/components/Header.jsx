@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Plane } from 'lucide-react';
 
-export default function Header() {
+export default function Header({navcolor = 'text-gray-600' , navcolorhover = 'text-blue-500'}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -28,9 +28,7 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { path: '/', label: 'Home', icon: 'home' },
     { path: '/destinations', label: 'Destinations', icon: 'map-pin' },
-    { path: '/itineraries', label: 'Itineraries', icon: 'route' },
     { path: '/about', label: 'About', icon: 'info' },
     { path: '/contact', label: 'Contact', icon: 'mail' },
   ];
@@ -58,7 +56,7 @@ export default function Header() {
               <h1 className={`text-xl font-bold transition-colors duration-300 ${
                 isScrolled 
                   ? 'text-gray-900' 
-                  : 'text-gray-600 drop-shadow-md'
+                  : `${navcolor} drop-shadow-md`
               }`}>
                 TripPlanner
               </h1>
@@ -81,7 +79,7 @@ export default function Header() {
                 className={`px-3 lg:px-4 py-2 rounded-lg transition-all duration-300 font-medium relative group ${
                   isScrolled 
                     ? 'text-gray-700 hover:text-blue-600' 
-                    : 'text-gray-600 hover:text-blue-500 drop-shadow-sm'
+                    : `${navcolor} hover:${navcolorhover} drop-shadow-sm`
                 }`}
               >
                 <span className="relative z-10">{item.label}</span>
@@ -98,7 +96,7 @@ export default function Header() {
                 className={`px-5 py-2 rounded-lg font-medium transition-all duration-300 ${
                   isScrolled 
                     ? 'text-blue-600 hover:text-blue-700 hover:bg-blue-50' 
-                    : 'text-blue-500 hover:text-blue-700 hover:bg-white/10'
+                    : `${navcolor} hover:${navcolorhover} hover:bg-white/10`
                 }`}
               >
                 Log In
@@ -121,7 +119,7 @@ export default function Header() {
             className={`md:hidden h-10 w-10 flex items-center justify-center rounded-lg text-2xl focus:outline-none transition-all duration-300 ${
               isScrolled 
                 ? 'text-gray-800 hover:bg-gray-100' 
-                : 'text-white hover:bg-white/20'
+                : `${navcolor} hover:${navcolorhover}`
             }`}
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -160,7 +158,6 @@ export default function Header() {
                   }`}>
                     {item.label === 'Home' && <Plane className="w-4 h-4" />}
                     {item.label === 'Destinations' && <Plane className="w-4 h-4" />}
-                    {item.label === 'Itineraries' && <Plane className="w-4 h-4" />}
                     {item.label === 'About' && <Plane className="w-4 h-4" />}
                     {item.label === 'Contact' && <Plane className="w-4 h-4" />}
                   </div>

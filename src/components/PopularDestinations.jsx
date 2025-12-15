@@ -9,83 +9,10 @@ import {
   Calendar,
   Plane
 } from 'lucide-react';
-
-const destinations = [
-  { 
-    name: "Paris", 
-    country: "France", 
-    color: "from-blue-400 to-purple-500",
-    image: "/assets/images/paris.jpg",
-    description: "City of Lights & Romance",
-    travelers: 2450,
-    rating: 4.9
-  },
-  { 
-    name: "Tokyo", 
-    country: "Japan", 
-    color: "from-red-400 to-pink-500",
-    image: "/assets/images/tokyo.jpg",
-    description: "Modern & Traditional Fusion",
-    travelers: 1890,
-    rating: 4.8
-  },
-  { 
-    name: "New York", 
-    country: "USA", 
-    color: "from-amber-400 to-orange-500",
-    image: "/assets/images/newyork.jpg",
-    description: "The City That Never Sleeps",
-    travelers: 3120,
-    rating: 4.7
-  },
-  { 
-    name: "Marrakech", 
-    country: "Morocco", 
-    color: "from-emerald-400 to-teal-600",
-    image: "/assets/images/marrakech.jpg",
-    description: "Vibrant Cultural Hub",
-    travelers: 1560,
-    rating: 4.9
-  },
-  { 
-    name: "Bali", 
-    country: "Indonesia", 
-    color: "from-green-400 to-blue-500",
-    image: "/assets/images/bali.jpg",
-    description: "Tropical Island Paradise",
-    travelers: 2780,
-    rating: 4.8
-  },
-  { 
-    name: "Rome", 
-    country: "Italy", 
-    color: "from-yellow-400 to-red-500",
-    image: "/assets/images/rome.jpg",
-    description: "Eternal City & History",
-    travelers: 2210,
-    rating: 4.9
-  },
-  { 
-    name: "Dubai", 
-    country: "UAE", 
-    color: "from-cyan-400 to-blue-600",
-    image: "/assets/images/dubai.jpg",
-    description: "Modern Desert Metropolis",
-    travelers: 1940,
-    rating: 4.7
-  },
-  { 
-    name: "Sydney", 
-    country: "Australia", 
-    color: "from-sky-400 to-blue-500",
-    image: "/assets/images/sydney.jpg",
-    description: "Harbor City & Beaches",
-    travelers: 1670,
-    rating: 4.8
-  }
-];
-
+import { Populardestinations } from '../data/data';
+import { useNavigate } from 'react-router-dom';
 export default function PopularDestinations() {
+  const navigate = useNavigate();
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50/30">
       <div className="max-w-7xl mx-auto">
@@ -105,10 +32,11 @@ export default function PopularDestinations() {
 
         {/* Destinations Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {destinations.map((dest, index) => (
+          {Populardestinations.map((dest, index) => (
             <div 
+            onClick={()=>navigate(`/city/${dest.id}`)}
               key={dest.name} 
-              className="group relative overflow-hidden bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              className="group relative overflow-hidden bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
             >
               {/* Gradient Background */}
               <div className={`absolute inset-0 bg-gradient-to-br ${dest.color} opacity-10 group-hover:opacity-20 transition-opacity duration-500`}></div>

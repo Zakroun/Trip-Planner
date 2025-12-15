@@ -1,6 +1,6 @@
 export default function SearchBar() {
   return (
-    <section className="py-16 px-4 md:px-6 lg:px-8 flex justify-center bg-gradient-to-b from-white to-blue-50/30">
+    <section className="py-16 px-4 md:px-6 lg:px-8 flex justify-center">
       <div className="max-w-4xl w-full">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

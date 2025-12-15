@@ -15,7 +15,7 @@ import {
   Award,
   ShieldCheck
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -27,7 +27,12 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const handleChange = (e) => {
     setFormData({
       ...formData,

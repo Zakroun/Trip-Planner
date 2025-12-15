@@ -17,8 +17,14 @@ import {
   Phone,
   Map
 } from 'lucide-react';
-
+import { useEffect } from 'react';
 export default function AboutPage() {
+    useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const teamMembers = [
     {
       name: "Sarah Chen",
