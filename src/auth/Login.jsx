@@ -14,8 +14,11 @@ import {
   ArrowRight,
   Key
 } from 'lucide-react';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { loginSuccess } from '../data/tripslice';
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -24,23 +27,93 @@ export default function LoginPage() {
     password: '',
     rememberMe: false
   });
+  const [errors, setErrors] = useState({});
+  const [loginError, setLoginError] = useState('');
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(false);
-  const [loginMethod, setLoginMethod] = useState('email'); // 'email' or 'phone'
+  const [loginMethod, setLoginMethod] = useState('email');
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    
+    // Check for remembered email in localStorage
+    const rememberedEmail = localStorage.getItem('rememberedEmail');
+    if (rememberedEmail) {
+      setFormData(prev => ({ ...prev, email: rememberedEmail, rememberMe: true }));
+    }
   }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoginError('');
+    setErrors({});
+    
+    // Simple validation
+    const newErrors = {};
+    
+    if (loginMethod === 'email') {
+      if (!formData.email) {
+        newErrors.email = 'Email is required';
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        newErrors.email = 'Email is invalid';
+      }
+    }
+    
+    if (!formData.password) {
+      newErrors.password = 'Password is required';
+    }
+    
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+    
     setIsLoading(true);
     
-    // Simulate API call
+    // Simulate login process with setTimeout
     setTimeout(() => {
       setIsLoading(false);
-      // Handle login logic here
-      console.log('Login attempt:', formData);
+      
+      // Mock authentication - in real app, replace with API call
+      // For demo purposes, accept any email/password combination
+      if (formData.email && formData.password) {
+        // Save to localStorage if remember me is checked
+        if (formData.rememberMe) {
+          localStorage.setItem('rememberedEmail', formData.email);
+        } else {
+          localStorage.removeItem('rememberedEmail');
+        }
+        
+        // Save auth token to localStorage (simulated)
+        localStorage.setItem('authToken', 'demo-token-' + Date.now());
+        localStorage.setItem('isAuthenticated', 'true');
+        
+        // Create mock user data
+        const userData = {
+          id: Date.now(),
+          name: formData.email.split('@')[0], // Use part of email as name
+          email: formData.email,
+          avatar: null
+        };
+        
+        // Save user data to localStorage
+        localStorage.setItem('user', JSON.stringify(userData));
+        
+        // Dispatch login success action
+        dispatch(loginSuccess({
+          user: userData
+        }));
+        
+        // Navigate to home page or dashboard
+        navigate('/');
+        
+      } else {
+        setLoginError('Please fill in all fields');
+      }
     }, 1500);
   };
 
@@ -50,16 +123,63 @@ export default function LoginPage() {
       ...prev,
       [name]: type === 'checkbox' ? checked : value
     }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
+    if (loginError) setLoginError('');
   };
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
 
+  // Handle social login (mock)
+  const handleSocialLogin = (provider) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      
+      // Mock social login success
+      const mockUser = {
+        id: Date.now(),
+        name: `Social ${provider} User`,
+        email: `user@${provider.toLowerCase()}.com`,
+        avatar: null
+      };
+      
+      localStorage.setItem('authToken', 'social-token-' + provider);
+      localStorage.setItem('isAuthenticated', 'true');
+      localStorage.setItem('user', JSON.stringify(mockUser));
+      
+      dispatch(loginSuccess({
+        user: mockUser
+      }));
+      
+      navigate('/');
+    }, 1500);
+  };
+
   const socialLogins = [
-    { provider: 'Google', icon: <Globe className="w-5 h-5" />, color: 'hover:bg-red-50 border-red-200 text-red-600' },
-    { provider: 'Facebook', icon: <Facebook className="w-5 h-5" />, color: 'hover:bg-blue-50 border-blue-200 text-blue-600' },
-    { provider: 'Twitter', icon: <Twitter className="w-5 h-5" />, color: 'hover:bg-sky-50 border-sky-200 text-sky-600' }
+    { 
+      provider: 'Google', 
+      icon: <Globe className="w-5 h-5" />, 
+      color: 'hover:bg-red-50 border-red-200 text-red-600',
+      onClick: () => handleSocialLogin('Google')
+    },
+    { 
+      provider: 'Facebook', 
+      icon: <Facebook className="w-5 h-5" />, 
+      color: 'hover:bg-blue-50 border-blue-200 text-blue-600',
+      onClick: () => handleSocialLogin('Facebook')
+    },
+    { 
+      provider: 'Twitter', 
+      icon: <Twitter className="w-5 h-5" />, 
+      color: 'hover:bg-sky-50 border-sky-200 text-sky-600',
+      onClick: () => handleSocialLogin('Twitter')
+    }
   ];
 
   const benefits = [
@@ -94,9 +214,17 @@ export default function LoginPage() {
               </p>
             </div>
 
+            {/* Error Message */}
+            {loginError && (
+              <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200">
+                <p className="text-red-600 text-center font-medium">{loginError}</p>
+              </div>
+            )}
+
             {/* Login Method Toggle */}
             <div className="flex bg-gray-100 rounded-xl p-1 mb-8">
               <button
+                type="button"
                 onClick={() => setLoginMethod('email')}
                 className={`flex-1 py-3 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 ${
                   loginMethod === 'email' 
@@ -108,6 +236,7 @@ export default function LoginPage() {
                 Email
               </button>
               <button
+                type="button"
                 onClick={() => setLoginMethod('phone')}
                 className={`flex-1 py-3 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 ${
                   loginMethod === 'phone' 
@@ -136,9 +265,16 @@ export default function LoginPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className={`w-full px-4 py-3 rounded-xl border transition-all duration-300 ${
+                      errors.email 
+                        ? 'border-red-300 focus:ring-2 focus:ring-red-500' 
+                        : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                    }`}
                     placeholder="you@example.com"
                   />
+                  {errors.email && (
+                    <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                  )}
                 </div>
               ) : (
                 <div>
@@ -191,7 +327,11 @@ export default function LoginPage() {
                     value={formData.password}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 pr-12 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className={`w-full px-4 py-3 pr-12 rounded-xl border transition-all duration-300 ${
+                      errors.password 
+                        ? 'border-red-300 focus:ring-2 focus:ring-red-500' 
+                        : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                    }`}
                     placeholder="Enter your password"
                   />
                   <button
@@ -206,6 +346,9 @@ export default function LoginPage() {
                     )}
                   </button>
                 </div>
+                {errors.password && (
+                  <p className="mt-1 text-sm text-red-600">{errors.password}</p>
+                )}
               </div>
 
               <div className="flex items-center justify-between">
@@ -255,7 +398,9 @@ export default function LoginPage() {
                   <button
                     key={social.provider}
                     type="button"
-                    className={`flex flex-col items-center justify-center py-3 rounded-xl border transition-all duration-300 ${social.color} hover:shadow-md`}
+                    onClick={social.onClick}
+                    disabled={isLoading}
+                    className={`flex flex-col items-center justify-center py-3 rounded-xl border transition-all duration-300 ${social.color} hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed`}
                   >
                     {social.icon}
                     <span className="text-xs mt-1">{social.provider}</span>
