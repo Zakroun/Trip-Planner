@@ -9,7 +9,6 @@ import {
   Clock,
   Star,
   MapPin,
-  ChevronRight,
   CheckCircle,
   TrendingUp,
   Calendar,

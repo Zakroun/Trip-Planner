@@ -15,7 +15,6 @@ import {
   Send,
   ArrowUp,
   Download,
-  Apple,
   CheckCircle,
 } from "lucide-react";
 

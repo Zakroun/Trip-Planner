@@ -8,6 +8,7 @@ import DestinationsPage from './pages/DestinationsPage';
 import CityDetailPage from './components/CityDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import Createtrip from './components/Createtrip';
 // Auth
 import Login from './auth/Login';
 import ForgotPassword from './auth/ForgotPassword';
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/destinations" element={<><Header navcolor="text-white" navcolorhover="text-gray-100"/><DestinationsPage/><Footer /></>} />
         <Route path="/city/:id" element={<><CityDetailPage /><Footer /></>} />
+        <Route path="/newtrip/:id" element={<><Createtrip/></>}/>
         <Route path="/about" element={<><Header /><AboutPage /><Footer /></>} />
         <Route path="/contact" element={<><Header /><ContactPage /><Footer /></>} />
         <Route path="/login" element={<Login />} />
