@@ -132,7 +132,7 @@ export default function Header({
                   className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md ${
                     isScrolled
                       ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700"
-                      : "bg-transparent text-blue-600 hover:bg-blue-50"
+                      : ` ${navcolor} hover:${navcolorhover}`
                   }`}
                 >
                   <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">

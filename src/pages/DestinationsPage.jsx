@@ -19,8 +19,11 @@ import { continents, countries, cities, getCountriesByContinentId, getCitiesByCo
 import ContinentCard from '../components/ContinentCard';
 import CountryCard from '../components/CountryCard';
 import CityPreviewCard from '../components/CityPreviewCard';
-
+import CountUp from '../components/CountUp';
 export default function DestinationsPage(){
+  console.log("continents:", continents.length);
+  console.log("countries:", countries.length);
+  console.log("cities:", cities.length);
     useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -468,7 +471,7 @@ export default function DestinationsPage(){
                   {stat.icon}
                 </div>
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{stat.value}</div>
+              <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2"><CountUp from={0} to={stat.value} duration={2} /></div>
               <div className="text-gray-600 font-medium">{stat.label}</div>
             </div>
           ))}
@@ -776,7 +779,7 @@ export default function DestinationsPage(){
                   </div>
                 </div>
                 {selectedCountry && (
-                  <div className="hidden md:block text-5xl">{getCurrentCountry()?.flag}</div>
+                <img src={getCurrentCountry()?.flag} alt={`${getCurrentCountry()?.name} flag`} className="w-12 h-12 object-cover rounded" />
                 )}
               </div>
               

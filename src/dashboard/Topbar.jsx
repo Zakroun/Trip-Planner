@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { 
-  Search, 
+import {
   Bell, 
   Settings, 
   HelpCircle, 
@@ -32,7 +31,6 @@ export default function TopBar() {
     return savedTheme ? JSON.parse(savedTheme) : false;
   });
 
-  const [searchQuery, setSearchQuery] = useState("");
   const [notifications, setNotifications] = useState(3);
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
@@ -64,11 +62,6 @@ export default function TopBar() {
     help: "Help & Support"
   };
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Searching for:", searchQuery);
-  };
-
   const handleExport = () => {
     console.log("Exporting data...");
   };
@@ -86,28 +79,6 @@ export default function TopBar() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <form onSubmit={handleSearch} className="hidden md:block relative">
-              <div className="relative">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search trips, destinations..."
-                  className={`w-64 pl-10 pr-4 py-2 rounded-xl outline-none focus:ring-2 focus:ring-blue-500 border border-gray-200 focus:border-transparent transition-all duration-300 ${isDarkMode ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'}`}
-                />
-                <Search className={`absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 ${isDarkMode ? 'text-gray-300' : 'text-gray-400'}`} />
-                {searchQuery && (
-                  <button
-                    type="button"
-                    onClick={() => setSearchQuery("")}
-                    className={`absolute right-3 top-1/2 transform -translate-y-1/2 ${isDarkMode ? 'text-gray-300 hover:text-gray-100' : 'text-gray-400 hover:text-gray-600'}`}
-                  >
-                    ×
-                  </button>
-                )}
-              </div>
-            </form>
-
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`p-2 rounded-lg transition-colors duration-300 ${isDarkMode ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'}`}
@@ -230,27 +201,9 @@ export default function TopBar() {
                 </div>
               )}
             </div>
-
-            <button className={`md:hidden p-2 rounded-lg ${isDarkMode ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'}`}>
-              <Search className="w-5 h-5" />
-            </button>
           </div>
         </div>
       </div>
-
-      <div className="md:hidden px-4 pb-4">
-        <form onSubmit={handleSearch} className="relative">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search trips, destinations..."
-            className={`w-full pl-10 pr-4 py-2 rounded-xl outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${isDarkMode ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'}`}
-          />
-          <Search className={`absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 ${isDarkMode ? 'text-gray-300' : 'text-gray-400'}`} />
-        </form>
-      </div>
-
       {(showNotifications || showUserMenu) && (
         <div 
           className="fixed inset-0 z-40"

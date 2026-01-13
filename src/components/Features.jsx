@@ -10,11 +10,12 @@ import {
   Zap,
   ShieldCheck
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const features = [
   {
     title: "Smart Destination Search",
-    description: "Find your perfect destination with intelligent filters, real-time availability, and personalized recommendations based on your preferences.",
+    description: "Find your perfect destination with intelligent filters, real-time availability, and personalized.",
     icon: <Search className="w-8 h-8" />,
     color: "from-blue-500 to-cyan-400",
     delay: "100"
@@ -76,8 +77,9 @@ const benefits = [
 ];
 
 export default function Features() {
+  const navigate = useNavigate();
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50/50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div id='howitwork' className="text-center mb-16">
@@ -159,7 +161,7 @@ export default function Features() {
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-100 border border-transparent group"
               >
                 <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${feature.color} bg-opacity-10 mb-6 group-hover:bg-opacity-20 transition-all duration-500`}>
-                  <div className={`text-gradient ${feature.color.replace('from-', 'text-').replace(' to-', '-to-')}`}>
+                  <div className={`text-white`}>
                     {feature.icon}
                   </div>
                 </div>
@@ -221,7 +223,7 @@ export default function Features() {
                 Join over 50,000 travelers who trust TripPlanner
               </p>
             </div>
-            <button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap">
+            <button onClick={()=>navigate('/destinations')} className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap">
               Get Started Free
             </button>
           </div>

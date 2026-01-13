@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import DotGrid from "./DotGrid";
 export default function Hero() {
   const navigate = useNavigate();
   return (

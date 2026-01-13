@@ -26,11 +26,13 @@ export default function ContinentCard({ continent, isSelected, onClick }){
       <div className="relative z-10 flex flex-col h-full justify-between p-8">
         <div className="flex items-start justify-between mb-6">
           {/* <div className="text-5xl drop-shadow-lg">{continent.icon}</div> */}
-          <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+          <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 
+          ${
             isSelected 
               ? 'bg-white text-blue-600' 
-              : 'bg-white/20 group-hover:bg-white text-white'
-          }`}>
+              : 'bg-white/20 text-white'
+          }
+          `}>
             <ArrowRight className="w-5 h-5" />
           </div>
         </div>

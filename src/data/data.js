@@ -1,58 +1,108 @@
 export const Populardestinations = [
-  { 
-    id: 1 , 
-    name: "Paris", 
-    country: "France", 
+  {
+    id: 1,
+    name: "Paris",
+    country: "France",
     color: "from-blue-400 to-purple-500",
     image: "/assets/images/paris.jpg",
     description: "City of Lights & Romance",
     travelers: 2450,
-    rating: 4.9
+    rating: 4.9,
   },
-  { 
-    id:4,
-    name: "Tokyo", 
-    country: "Japan", 
+  {
+    id: 4,
+    name: "Tokyo",
+    country: "Japan",
     color: "from-red-400 to-pink-500",
     image: "/assets/images/tokyo.jpg",
     description: "Modern & Traditional Fusion",
     travelers: 1890,
-    rating: 4.8
+    rating: 4.8,
   },
-  { 
-    id:7,
-    name: "New York", 
-    country: "USA", 
+  {
+    id: 7,
+    name: "New York",
+    country: "USA",
     color: "from-amber-400 to-orange-500",
     image: "/assets/images/newyork.jpg",
     description: "The City That Never Sleeps",
     travelers: 3120,
-    rating: 4.7
+    rating: 4.7,
   },
-  { 
-    id:16,
-    name: "Sydney", 
-    country: "Australia", 
+  {
+    id: 16,
+    name: "Sydney",
+    country: "Australia",
     color: "from-sky-400 to-blue-500",
     image: "/assets/images/sydney.jpg",
     description: "Harbor City & Beaches",
     travelers: 1670,
-    rating: 4.8
-  }
+    rating: 4.8,
+  },
 ];
 
 // destinations.js - Comprehensive Travel Database
 export const continents = [
-  { id: 1, name: "Europe", color: "from-blue-400 to-indigo-600", icon: "🏛️" , imageicon: "/assets/images/europeicon.png" , image:'/assets/images/Europe.png' },
-  { id: 2, name: "Asia", color: "from-red-400 to-orange-600", icon: "🗼" , imageicon: "/assets/images/asiaicon.png" , image:'/assets/images/Asia.png'},
-  { id: 3, name: "North America", color: "from-green-400 to-teal-600", icon: "🗽" ,  imageicon: "/assets/images/northamricaicon.png" , image:'/assets/images/NorthAmerica.png'},
-  { id: 4, name: "South America", color: "from-yellow-400 to-amber-600", icon: "🌴" , imageicon: "/assets/images/sothamericaicon.png" , image:'/assets/images/SouthAmerica.png'},
-  { id: 5, name: "Africa", color: "from-purple-400 to-pink-600", icon: "🦁" , imageicon: "/assets/images/africaicon.png" , image:'/assets/images/Africa.png'},
-  { id: 6, name: "Oceania", color: "from-cyan-400 to-blue-500", icon: "🐨" , imageicon: "/assets/images/oceaniaicon.png" , image:'/assets/images/Oceania.png'},
-  { id: 7, name: "Middle East", color: "from-emerald-400 to-green-600", icon: "🕌" , imageicon: "/assets/images/middleeasticon.png" , image:'/assets/images/MiddleEast.png'}
+  {
+    id: 1,
+    name: "Europe",
+    color: "from-blue-400 to-indigo-600",
+    icon: "🏛️",
+    imageicon: "/assets/images/europeicon.png",
+    image: "/assets/images/Europe.png",
+  },
+  {
+    id: 2,
+    name: "Asia",
+    color: "from-red-400 to-orange-600",
+    icon: "🗼",
+    imageicon: "/assets/images/asiaicon.png",
+    image: "/assets/images/Asia.png",
+  },
+  {
+    id: 3,
+    name: "North America",
+    color: "from-green-400 to-teal-600",
+    icon: "🗽",
+    imageicon: "/assets/images/northamricaicon.png",
+    image: "/assets/images/NorthAmerica.png",
+  },
+  {
+    id: 4,
+    name: "South America",
+    color: "from-yellow-400 to-amber-600",
+    icon: "🌴",
+    imageicon: "/assets/images/sothamericaicon.png",
+    image: "/assets/images/SouthAmerica.png",
+  },
+  {
+    id: 5,
+    name: "Africa",
+    color: "from-purple-400 to-pink-600",
+    icon: "🦁",
+    imageicon: "/assets/images/africaicon.png",
+    image: "/assets/images/Africa.png",
+  },
+  {
+    id: 6,
+    name: "Oceania",
+    color: "from-cyan-400 to-blue-500",
+    icon: "🐨",
+    imageicon: "/assets/images/oceaniaicon.png",
+    image: "/assets/images/Oceania.png",
+  },
+  {
+    id: 7,
+    name: "Middle East",
+    color: "from-emerald-400 to-green-600",
+    icon: "🕌",
+    imageicon: "/assets/images/middleeasticon.png",
+    image: "/assets/images/MiddleEast.png",
+  },
 ];
 
 export const countries = [
+  // Europe (Continent ID: 1)
   {
     id: 1,
     name: "France",
@@ -66,40 +116,10 @@ export const countries = [
     color: "from-blue-400 to-purple-600",
     flag: "/assets/images/france.png",
     description: "Known for its wine, cuisine, fashion, art, and rich history",
-    airports: ["CDG", "ORY", "NCE", "MRS", "LYS"]
+    airports: ["CDG", "ORY", "NCE", "MRS", "LYS"],
   },
   {
     id: 2,
-    name: "Japan",
-    continentId: 2,
-    capital: "Tokyo",
-    language: "Japanese",
-    currency: "JPY",
-    timezone: "JST",
-    bestTimeToVisit: ["March", "April", "October", "November"],
-    visaRequirements: "Visa on arrival for many countries",
-    color: "from-red-400 to-pink-600",
-    flag: "/assets/images/japan.png",
-    description: "Land of the rising sun with ancient traditions and cutting-edge technology",
-    airports: ["HND", "NRT", "KIX", "NGO"]
-  },
-  {
-    id: 3,
-    name: "United States",
-    continentId: 3,
-    capital: "Washington D.C.",
-    language: "English",
-    currency: "USD",
-    timezone: "Multiple (EST, CST, MST, PST)",
-    bestTimeToVisit: ["May", "June", "September", "October"],
-    visaRequirements: "ESTA/Visa required",
-    color: "from-indigo-400 to-blue-600",
-    flag: "/assets/images/unitedstates.png",
-    description: "Diverse landscapes, iconic cities, and cultural melting pot",
-    airports: ["JFK", "LAX", "ORD", "DFW", "SFO"]
-  },
-  {
-    id: 4,
     name: "Italy",
     continentId: 1,
     capital: "Rome",
@@ -110,11 +130,108 @@ export const countries = [
     visaRequirements: "Schengen Visa",
     color: "from-green-400 to-red-600",
     flag: "/assets/images/italy.png",
-    description: "Birthplace of Renaissance, famous for cuisine, art, and history",
-    airports: ["FCO", "MXP", "VCE", "NAP"]
+    description:
+      "Birthplace of Renaissance, famous for cuisine, art, and history",
+    airports: ["FCO", "MXP", "VCE", "NAP"],
+  },
+  {
+    id: 3,
+    name: "Spain",
+    continentId: 1,
+    capital: "Madrid",
+    language: "Spanish",
+    currency: "EUR",
+    timezone: "CET",
+    bestTimeToVisit: ["April", "May", "June", "September", "October"],
+    visaRequirements: "Schengen Visa",
+    color: "from-red-400 to-yellow-600",
+    flag: "/assets/images/spain.png",
+    description:
+      "Famous for beaches, architecture, fiestas, and delicious cuisine",
+    airports: ["MAD", "BCN", "AGP", "PMI"],
+  },
+  {
+    id: 4,
+    name: "Greece",
+    continentId: 1,
+    capital: "Athens",
+    language: "Greek",
+    currency: "EUR",
+    timezone: "EET",
+    bestTimeToVisit: ["May", "June", "September", "October"],
+    visaRequirements: "Schengen Visa",
+    color: "from-blue-400 to-white",
+    flag: "/assets/images/greece.png",
+    description:
+      "Ancient history, beautiful islands, and Mediterranean cuisine",
+    airports: ["ATH", "HER", "JMK", "RHO"],
   },
   {
     id: 5,
+    name: "Germany",
+    continentId: 1,
+    capital: "Berlin",
+    language: "German",
+    currency: "EUR",
+    timezone: "CET",
+    bestTimeToVisit: ["May", "June", "July", "August", "September"],
+    visaRequirements: "Schengen Visa",
+    color: "from-black to-red-600 via-yellow-500",
+    flag: "/assets/images/germany.png",
+    description:
+      "Land of innovation, castles, beer festivals, and rich cultural heritage",
+    airports: ["FRA", "MUC", "TXL", "HAM", "CGN"],
+  },
+  {
+    id: 6,
+    name: "United Kingdom",
+    continentId: 1,
+    capital: "London",
+    language: "English",
+    currency: "GBP",
+    timezone: "GMT/BST",
+    bestTimeToVisit: ["May", "June", "July", "August", "September"],
+    visaRequirements: "Visa required",
+    color: "from-blue-600 to-red-600",
+    flag: "/assets/images/uk.png",
+    description: "Historic landmarks, royal heritage, and cosmopolitan cities",
+    airports: ["LHR", "LGW", "MAN", "EDI", "BHX"],
+  },
+  {
+    id: 7,
+    name: "Portugal",
+    continentId: 1,
+    capital: "Lisbon",
+    language: "Portuguese",
+    currency: "EUR",
+    timezone: "WET",
+    bestTimeToVisit: ["March", "April", "May", "September", "October"],
+    visaRequirements: "Schengen Visa",
+    color: "from-green-600 to-red-600",
+    flag: "/assets/images/portugal.png",
+    description: "Sunny beaches, historic cities, and famous port wine",
+    airports: ["LIS", "OPO", "FAO", "FNC"],
+  },
+
+  // Asia (Continent ID: 2)
+  {
+    id: 8,
+    name: "Japan",
+    continentId: 2,
+    capital: "Tokyo",
+    language: "Japanese",
+    currency: "JPY",
+    timezone: "JST",
+    bestTimeToVisit: ["March", "April", "October", "November"],
+    visaRequirements: "Visa on arrival for many countries",
+    color: "from-red-400 to-pink-600",
+    flag: "/assets/images/japan.png",
+    description:
+      "Land of the rising sun with ancient traditions and cutting-edge technology",
+    airports: ["HND", "NRT", "KIX", "NGO"],
+  },
+  {
+    id: 9,
     name: "Thailand",
     continentId: 2,
     capital: "Bangkok",
@@ -126,55 +243,10 @@ export const countries = [
     color: "from-purple-400 to-blue-600",
     flag: "/assets/images/thailand.png",
     description: "Land of smiles with beautiful beaches, temples, and cuisine",
-    airports: ["BKK", "DMK", "HKT", "CNX"]
+    airports: ["BKK", "DMK", "HKT", "CNX"],
   },
   {
-    id: 6,
-    name: "Australia",
-    continentId: 6,
-    capital: "Canberra",
-    language: "English",
-    currency: "AUD",
-    timezone: "Multiple (AEST, ACST, AWST)",
-    bestTimeToVisit: ["September", "October", "November", "March", "April"],
-    visaRequirements: "ETA/Visa required",
-    color: "from-amber-400 to-orange-600",
-    flag: "/assets/images/australia.png",
-    description: "Diverse ecosystems, unique wildlife, and stunning landscapes",
-    airports: ["SYD", "MEL", "BNE", "PER"]
-  },
-  {
-    id: 7,
-    name: "United Arab Emirates",
-    continentId: 7,
-    capital: "Abu Dhabi",
-    language: "Arabic",
-    currency: "AED",
-    timezone: "GST",
-    bestTimeToVisit: ["November", "December", "January", "February"],
-    visaRequirements: "Visa on arrival for many countries",
-    color: "from-emerald-400 to-green-600",
-    flag: "/assets/images/emirates.png",
-    description: "Modern architecture, luxury shopping, and desert adventures",
-    airports: ["DXB", "AUH", "DWC"]
-  },
-  {
-    id: 8,
-    name: "Spain",
-    continentId: 1,
-    capital: "Madrid",
-    language: "Spanish",
-    currency: "EUR",
-    timezone: "CET",
-    bestTimeToVisit: ["April", "May", "June", "September", "October"],
-    visaRequirements: "Schengen Visa",
-    color: "from-red-400 to-yellow-600",
-    flag: "/assets/images/spain.png",
-    description: "Famous for beaches, architecture, fiestas, and delicious cuisine",
-    airports: ["MAD", "BCN", "AGP", "PMI"]
-  },
-  {
-    id: 9,
+    id: 10,
     name: "Indonesia",
     continentId: 2,
     capital: "Jakarta",
@@ -186,445 +258,3306 @@ export const countries = [
     color: "from-red-400 to-white",
     flag: "/assets/images/indonesia.png",
     description: "Thousands of islands with diverse cultures and landscapes",
-    airports: ["CGK", "DPS", "SUB", "UPG"]
+    airports: ["CGK", "DPS", "SUB", "UPG"],
   },
   {
-    id: 10,
-    name: "Greece",
-    continentId: 1,
-    capital: "Athens",
-    language: "Greek",
-    currency: "EUR",
-    timezone: "EET",
+    id: 11,
+    name: "South Korea",
+    continentId: 2,
+    capital: "Seoul",
+    language: "Korean",
+    currency: "KRW",
+    timezone: "KST",
+    bestTimeToVisit: ["April", "May", "September", "October"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-blue-400 to-red-400 via-white",
+    flag: "/assets/images/southkorea.png",
+    description:
+      "K-pop, advanced technology, ancient palaces, and delicious cuisine",
+    airports: ["ICN", "GMP", "CJU", "PUS"],
+  },
+  {
+    id: 12,
+    name: "Vietnam",
+    continentId: 2,
+    capital: "Hanoi",
+    language: "Vietnamese",
+    currency: "VND",
+    timezone: "ICT",
+    bestTimeToVisit: [
+      "February",
+      "March",
+      "April",
+      "August",
+      "September",
+      "October",
+    ],
+    visaRequirements: "eVisa available",
+    color: "from-red-600 to-yellow-500",
+    flag: "/assets/images/vietnam.png",
+    description: "Stunning landscapes, rich history, and delicious street food",
+    airports: ["HAN", "SGN", "DAD", "CXR"],
+  },
+  {
+    id: 13,
+    name: "India",
+    continentId: 2,
+    capital: "New Delhi",
+    language: "Hindi, English",
+    currency: "INR",
+    timezone: "IST",
+    bestTimeToVisit: ["October", "November", "February", "March"],
+    visaRequirements: "eVisa available",
+    color: "from-saffron-400 to-green-600 via-white",
+    flag: "/assets/images/india.png",
+    description: "Diverse cultures, ancient history, and vibrant colors",
+    airports: ["DEL", "BOM", "MAA", "BLR", "CCU"],
+  },
+  {
+    id: 14,
+    name: "Singapore",
+    continentId: 2,
+    capital: "Singapore",
+    language: "English, Malay, Mandarin, Tamil",
+    currency: "SGD",
+    timezone: "SGT",
+    bestTimeToVisit: ["February", "March", "April", "July", "August"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-red-400 to-white",
+    flag: "/assets/images/singapore.png",
+    description: "Garden city with modern architecture and diverse cuisine",
+    airports: ["SIN", "QPG"],
+  },
+
+  // North America (Continent ID: 3)
+  {
+    id: 15,
+    name: "United States",
+    continentId: 3,
+    capital: "Washington D.C.",
+    language: "English",
+    currency: "USD",
+    timezone: "Multiple (EST, CST, MST, PST)",
     bestTimeToVisit: ["May", "June", "September", "October"],
-    visaRequirements: "Schengen Visa",
-    color: "from-blue-400 to-white",
-    flag: "/assets/images/greece.png",
-    description: "Ancient history, beautiful islands, and Mediterranean cuisine",
-    airports: ["ATH", "HER", "JMK", "RHO"]
-  }
+    visaRequirements: "ESTA/Visa required",
+    color: "from-indigo-400 to-blue-600",
+    flag: "/assets/images/unitedstates.png",
+    description: "Diverse landscapes, iconic cities, and cultural melting pot",
+    airports: ["JFK", "LAX", "ORD", "DFW", "SFO"],
+  },
+  {
+    id: 16,
+    name: "Canada",
+    continentId: 3,
+    capital: "Ottawa",
+    language: "English, French",
+    currency: "CAD",
+    timezone: "Multiple (EST, CST, MST, PST)",
+    bestTimeToVisit: ["June", "July", "August", "September"],
+    visaRequirements: "eTA/Visa required",
+    color: "from-red-600 to-white",
+    flag: "/assets/images/canada.png",
+    description: "Vast wilderness, multicultural cities, and natural beauty",
+    airports: ["YYZ", "YVR", "YUL", "YYC", "YOW"],
+  },
+  {
+    id: 17,
+    name: "Mexico",
+    continentId: 3,
+    capital: "Mexico City",
+    language: "Spanish",
+    currency: "MXN",
+    timezone: "Multiple (CST, MST, PST)",
+    bestTimeToVisit: ["December", "January", "February", "March", "April"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-green-600 to-white to-red-600",
+    flag: "/assets/images/mexico.png",
+    description:
+      "Ancient ruins, vibrant culture, beautiful beaches, and delicious cuisine",
+    airports: ["MEX", "CUN", "GDL", "TIJ", "MTY"],
+  },
+  {
+    id: 18,
+    name: "Costa Rica",
+    continentId: 3,
+    capital: "San José",
+    language: "Spanish",
+    currency: "CRC",
+    timezone: "CST",
+    bestTimeToVisit: ["December", "January", "February", "March", "April"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-blue-600 to-white to-red-600",
+    flag: "/assets/images/costarica.png",
+    description:
+      "Eco-tourism paradise with rainforests, volcanoes, and beaches",
+    airports: ["SJO", "LIR", "SAL"],
+  },
+  {
+    id: 19,
+    name: "Cuba",
+    continentId: 3,
+    capital: "Havana",
+    language: "Spanish",
+    currency: "CUP",
+    timezone: "CST",
+    bestTimeToVisit: [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+    ],
+    visaRequirements: "Tourist card required",
+    color: "from-blue-400 to-white to-red-600",
+    flag: "/assets/images/cuba.png",
+    description:
+      "Vintage cars, colorful architecture, cigars, and rich culture",
+    airports: ["HAV", "VRA", "SCU", "CCC"],
+  },
+
+  // South America (Continent ID: 4)
+  {
+    id: 20,
+    name: "Brazil",
+    continentId: 4,
+    capital: "Brasília",
+    language: "Portuguese",
+    currency: "BRL",
+    timezone: "BRT (UTC-3)",
+    bestTimeToVisit: ["December", "January", "February", "March"],
+    visaRequirements: "eVisa available",
+    color: "from-green-600 to-yellow-500 to-blue-600",
+    flag: "/assets/images/brazil.png",
+    description: "Amazon rainforest, Carnival, samba, and beautiful beaches",
+    airports: ["GRU", "GIG", "BSB", "CNF", "SSA"],
+  },
+  {
+    id: 21,
+    name: "Argentina",
+    continentId: 4,
+    capital: "Buenos Aires",
+    language: "Spanish",
+    currency: "ARS",
+    timezone: "ART (UTC-3)",
+    bestTimeToVisit: [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+    ],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-sky-400 to-white to-sky-400",
+    flag: "/assets/images/argentina.png",
+    description: "Tango, steak, wine, glaciers, and dramatic landscapes",
+    airports: ["EZE", "AEP", "COR", "MDZ", "BRC"],
+  },
+  {
+    id: 22,
+    name: "Peru",
+    continentId: 4,
+    capital: "Lima",
+    language: "Spanish",
+    currency: "PEN",
+    timezone: "PET (UTC-5)",
+    bestTimeToVisit: ["May", "June", "July", "August", "September"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-red-600 to-white",
+    flag: "/assets/images/peru.png",
+    description:
+      "Machu Picchu, ancient Incan civilization, and diverse ecosystems",
+    airports: ["LIM", "CUZ", "AQP", "TRU"],
+  },
+  {
+    id: 23,
+    name: "Chile",
+    continentId: 4,
+    capital: "Santiago",
+    language: "Spanish",
+    currency: "CLP",
+    timezone: "CLT (UTC-4)",
+    bestTimeToVisit: [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+    ],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-blue-600 to-white to-red-600",
+    flag: "/assets/images/chile.png",
+    description:
+      "Atacama Desert, Patagonia, Easter Island, and world-class wine",
+    airports: ["SCL", "PUQ", "ANF", "CCP"],
+  },
+  {
+    id: 24,
+    name: "Colombia",
+    continentId: 4,
+    capital: "Bogotá",
+    language: "Spanish",
+    currency: "COP",
+    timezone: "COT (UTC-5)",
+    bestTimeToVisit: [
+      "December",
+      "January",
+      "February",
+      "March",
+      "June",
+      "July",
+    ],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-yellow-500 to-blue-600 to-red-600",
+    flag: "/assets/images/colombia.png",
+    description: "Coffee region, Caribbean beaches, Amazon, and vibrant cities",
+    airports: ["BOG", "MDE", "CTG", "CLO", "ADZ"],
+  },
+
+  // Africa (Continent ID: 5)
+  {
+    id: 25,
+    name: "South Africa",
+    continentId: 5,
+    capital: "Pretoria",
+    language: "English, Afrikaans, Zulu, Xhosa",
+    currency: "ZAR",
+    timezone: "SAST (UTC+2)",
+    bestTimeToVisit: ["May", "June", "July", "August", "September", "October"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-red-600 to-blue-600 to-green-600 via-black-yellow-white",
+    flag: "/assets/images/southafrica.png",
+    description: "Safaris, Table Mountain, wine regions, and diverse cultures",
+    airports: ["JNB", "CPT", "DUR", "GRJ"],
+  },
+  {
+    id: 26,
+    name: "Egypt",
+    continentId: 5,
+    capital: "Cairo",
+    language: "Arabic",
+    currency: "EGP",
+    timezone: "EET (UTC+2)",
+    bestTimeToVisit: [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+    ],
+    visaRequirements: "Visa on arrival/eVisa available",
+    color: "from-red-600 to-white to-black",
+    flag: "/assets/images/egypt.png",
+    description: "Ancient pyramids, Nile River, Red Sea, and rich history",
+    airports: ["CAI", "HRG", "LXR", "SSH"],
+  },
+  {
+    id: 27,
+    name: "Kenya",
+    continentId: 5,
+    capital: "Nairobi",
+    language: "Swahili, English",
+    currency: "KES",
+    timezone: "EAT (UTC+3)",
+    bestTimeToVisit: [
+      "January",
+      "February",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+    ],
+    visaRequirements: "eVisa available",
+    color: "from-black to-red-600 to-green-600 via-white",
+    flag: "/assets/images/kenya.png",
+    description:
+      "Maasai Mara, wildlife safaris, beautiful coastlines, and diverse cultures",
+    airports: ["NBO", "MBA", "KIS"],
+  },
+  {
+    id: 28,
+    name: "Morocco",
+    continentId: 5,
+    capital: "Rabat",
+    language: "Arabic, Berber",
+    currency: "MAD",
+    timezone: "WEST (UTC+1)",
+    bestTimeToVisit: [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November",
+    ],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-red-600 to-green-600",
+    flag: "/assets/images/morocco.png",
+    description:
+      "Marrakech markets, Sahara Desert, Atlas Mountains, and rich culture",
+    airports: ["CMN", "RAK", "FEZ", "AGA"],
+  },
+  {
+    id: 29,
+    name: "Tanzania",
+    continentId: 5,
+    capital: "Dodoma",
+    language: "Swahili, English",
+    currency: "TZS",
+    timezone: "EAT (UTC+3)",
+    bestTimeToVisit: ["June", "July", "August", "September", "October"],
+    visaRequirements: "Visa on arrival/eVisa available",
+    color: "from-green-600 to-yellow-500 to-blue-600 to-black",
+    flag: "/assets/images/tanzania.png",
+    description:
+      "Mount Kilimanjaro, Serengeti, Zanzibar, and wildlife migrations",
+    airports: ["JRO", "DAR", "ZNZ"],
+  },
+  {
+    id: 30,
+    name: "Rwanda",
+    continentId: 5,
+    capital: "Kigali",
+    language: "Kinyarwanda, French, English, Swahili",
+    currency: "RWF",
+    timezone: "CAT (UTC+2)",
+    bestTimeToVisit: [
+      "June",
+      "July",
+      "August",
+      "September",
+      "December",
+      "January",
+      "February",
+    ],
+    visaRequirements: "Visa on arrival/eVisa available",
+    color: "from-blue-600 to-yellow-500 to-green-600",
+    flag: "/assets/images/rwanda.png",
+    description:
+      "Mountain gorillas, clean cities, volcanoes, and conservation success",
+    airports: ["KGL", "GYI"],
+  },
+
+  // Oceania (Continent ID: 6)
+  {
+    id: 31,
+    name: "Australia",
+    continentId: 6,
+    capital: "Canberra",
+    language: "English",
+    currency: "AUD",
+    timezone: "Multiple (AEST, ACST, AWST)",
+    bestTimeToVisit: ["September", "October", "November", "March", "April"],
+    visaRequirements: "ETA/Visa required",
+    color: "from-amber-400 to-orange-600",
+    flag: "/assets/images/australia.png",
+    description: "Diverse ecosystems, unique wildlife, and stunning landscapes",
+    airports: ["SYD", "MEL", "BNE", "PER"],
+  },
+  {
+    id: 32,
+    name: "New Zealand",
+    continentId: 6,
+    capital: "Wellington",
+    language: "English, Māori",
+    currency: "NZD",
+    timezone: "NZST (UTC+12)",
+    bestTimeToVisit: ["December", "January", "February", "March"],
+    visaRequirements: "NZeTA/Visa required",
+    color: "from-blue-600 to-red-600",
+    flag: "/assets/images/newzealand.png",
+    description: "Middle-earth landscapes, adventure sports, and Maori culture",
+    airports: ["AKL", "CHC", "WLG", "QUE"],
+  },
+  {
+    id: 33,
+    name: "Fiji",
+    continentId: 6,
+    capital: "Suva",
+    language: "English, Fijian, Hindi",
+    currency: "FJD",
+    timezone: "FJT (UTC+12)",
+    bestTimeToVisit: ["May", "June", "July", "August", "September", "October"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-blue-600 to-white",
+    flag: "/assets/images/fiji.png",
+    description:
+      "Tropical paradise with crystal-clear waters and friendly culture",
+    airports: ["NAN", "SUV", "NTT"],
+  },
+  {
+    id: 34,
+    name: "Papua New Guinea",
+    continentId: 6,
+    capital: "Port Moresby",
+    language: "English, Tok Pisin, Hiri Motu",
+    currency: "PGK",
+    timezone: "PGT (UTC+10)",
+    bestTimeToVisit: ["May", "June", "July", "August", "September", "October"],
+    visaRequirements: "Visa required",
+    color: "from-red-600 to-black to-yellow-500",
+    flag: "/assets/images/papuanewguinea.png",
+    description: "Tribal cultures, dense rainforests, and unique biodiversity",
+    airports: ["POM", "LAE", "RAB"],
+  },
+  {
+    id: 35,
+    name: "Vanuatu",
+    continentId: 6,
+    capital: "Port Vila",
+    language: "Bislama, English, French",
+    currency: "VUV",
+    timezone: "VUT (UTC+11)",
+    bestTimeToVisit: [
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+    ],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-red-600 to-green-600 to-black to-yellow-500",
+    flag: "/assets/images/vanuatu.png",
+    description: "Volcanic islands, pristine beaches, and unique cargo cults",
+    airports: ["VLI", "SON", "TAH"],
+  },
+
+  // Middle East (Continent ID: 7)
+  {
+    id: 36,
+    name: "United Arab Emirates",
+    continentId: 7,
+    capital: "Abu Dhabi",
+    language: "Arabic",
+    currency: "AED",
+    timezone: "GST",
+    bestTimeToVisit: ["November", "December", "January", "February"],
+    visaRequirements: "Visa on arrival for many countries",
+    color: "from-emerald-400 to-green-600",
+    flag: "/assets/images/emirates.png",
+    description: "Modern architecture, luxury shopping, and desert adventures",
+    airports: ["DXB", "AUH", "DWC"],
+  },
+  {
+    id: 37,
+    name: "Turkey",
+    continentId: 7,
+    capital: "Ankara",
+    language: "Turkish",
+    currency: "TRY",
+    timezone: "TRT (UTC+3)",
+    bestTimeToVisit: ["April", "May", "June", "September", "October"],
+    visaRequirements: "eVisa available",
+    color: "from-red-600 to-white",
+    flag: "/assets/images/turkey.png",
+    description: "Where East meets West, rich history, and delicious cuisine",
+    airports: ["IST", "SAW", "ESB", "ADB", "AYT"],
+  },
+  {
+    id: 38,
+    name: "Saudi Arabia",
+    continentId: 7,
+    capital: "Riyadh",
+    language: "Arabic",
+    currency: "SAR",
+    timezone: "AST (UTC+3)",
+    bestTimeToVisit: ["November", "December", "January", "February"],
+    visaRequirements: "eVisa/tourist visa available",
+    color: "from-green-600 to-white",
+    flag: "/assets/images/saudiarabia.png",
+    description: "Islamic heritage, modern cities, and desert landscapes",
+    airports: ["RUH", "JED", "DMM", "MED"],
+  },
+  {
+    id: 39,
+    name: "Jordan",
+    continentId: 7,
+    capital: "Amman",
+    language: "Arabic",
+    currency: "JOD",
+    timezone: "EET (UTC+2)",
+    bestTimeToVisit: [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November",
+    ],
+    visaRequirements: "Visa on arrival for many countries",
+    color: "from-black to-white to-green-600 to-red-600",
+    flag: "/assets/images/jordan.png",
+    description: "Petra, Wadi Rum, Dead Sea, and ancient history",
+    airports: ["AMM", "AQJ"],
+  },
+  {
+    id: 40,
+    name: "Qatar",
+    continentId: 7,
+    capital: "Doha",
+    language: "Arabic",
+    currency: "QAR",
+    timezone: "AST (UTC+3)",
+    bestTimeToVisit: ["November", "December", "January", "February"],
+    visaRequirements: "Visa-free for many countries",
+    color: "from-maroon-600 to-white",
+    flag: "/assets/images/qatar.png",
+    description:
+      "Modern architecture, desert adventures, and cultural heritage",
+    airports: ["DOH", "DIA"],
+  },
 ];
 
 export const cities = [
-  // France Cities
+  // Existing cities (25) - keeping for reference
   {
     id: 1,
     name: "Paris",
-    countryId: 1,
+    countryId: 1, // France
     population: 2161000,
     description: "City of Lights, famous for art, fashion, and cuisine",
     bestTimeToVisit: "April-June, October-November",
     avgTemp: {
       summer: "20-25°C",
-      winter: "3-8°C"
+      winter: "3-8°C",
     },
     coordinates: { lat: 48.8566, lng: 2.3522 },
-    popularFor: ["Eiffel Tower", "Louvre Museum", "Notre-Dame", "French Cuisine"],
+    popularFor: [
+      "Eiffel Tower",
+      "Louvre Museum",
+      "Notre-Dame",
+      "French Cuisine",
+    ],
     image: "/assets/images/paris.jpg",
-    color: "from-blue-300 to-purple-500"
+    color: "from-blue-300 to-purple-500",
   },
   {
     id: 2,
     name: "Nice",
-    countryId: 1,
+    countryId: 1, // France
     population: 342522,
     description: "Beautiful Mediterranean city on the French Riviera",
     bestTimeToVisit: "May-September",
     avgTemp: {
       summer: "25-30°C",
-      winter: "8-13°C"
+      winter: "8-13°C",
     },
-    coordinates: { lat: 43.7102, lng: 7.2620 },
+    coordinates: { lat: 43.7102, lng: 7.262 },
     popularFor: ["Promenade des Anglais", "Beaches", "Old Town", "Carnival"],
     image: "/assets/images/nice.jpg",
-    color: "from-cyan-300 to-blue-500"
+    color: "from-cyan-300 to-blue-500",
   },
   {
     id: 3,
     name: "Lyon",
-    countryId: 1,
+    countryId: 1, // France
     population: 515695,
     description: "Gastronomic capital of France with Roman history",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "20-27°C",
-      winter: "1-7°C"
+      winter: "1-7°C",
     },
-    coordinates: { lat: 45.7640, lng: 4.8357 },
-    popularFor: ["Gastronomy", "Roman Theaters", "Old Town", "Festival of Lights"],
+    coordinates: { lat: 45.764, lng: 4.8357 },
+    popularFor: [
+      "Gastronomy",
+      "Roman Theaters",
+      "Old Town",
+      "Festival of Lights",
+    ],
     image: "/assets/images/lyon.jpg",
-    color: "from-red-300 to-orange-500"
+    color: "from-red-300 to-orange-500",
   },
-
-  // Japan Cities
   {
     id: 4,
     name: "Tokyo",
-    countryId: 2,
+    countryId: 8, // Japan
     population: 13960000,
     description: "Bustling metropolis blending tradition and innovation",
     bestTimeToVisit: "March-May, September-November",
     avgTemp: {
       summer: "25-30°C",
-      winter: "2-10°C"
+      winter: "2-10°C",
     },
     coordinates: { lat: 35.6762, lng: 139.6503 },
-    popularFor: ["Shibuya Crossing", "Senso-ji Temple", "Tsukiji Market", "Anime Culture"],
+    popularFor: [
+      "Shibuya Crossing",
+      "Senso-ji Temple",
+      "Tsukiji Market",
+      "Anime Culture",
+    ],
     image: "/assets/images/tokyo.jpg",
-    color: "from-red-400 to-pink-600"
+    color: "from-red-400 to-pink-600",
   },
   {
     id: 5,
     name: "Kyoto",
-    countryId: 2,
+    countryId: 8, // Japan
     population: 1475000,
     description: "Ancient capital with over 2000 temples and shrines",
     bestTimeToVisit: "March-May, September-November",
     avgTemp: {
       summer: "25-30°C",
-      winter: "1-8°C"
+      winter: "1-8°C",
     },
     coordinates: { lat: 35.0116, lng: 135.7681 },
-    popularFor: ["Fushimi Inari Shrine", "Kinkaku-ji", "Gion District", "Cherry Blossoms"],
+    popularFor: [
+      "Fushimi Inari Shrine",
+      "Kinkaku-ji",
+      "Gion District",
+      "Cherry Blossoms",
+    ],
     image: "/assets/images/kyoto.jpg",
-    color: "from-green-400 to-emerald-600"
+    color: "from-green-400 to-emerald-600",
   },
   {
     id: 6,
     name: "Osaka",
-    countryId: 2,
+    countryId: 8, // Japan
     population: 2750000,
     description: "Vibrant city known for food, nightlife, and comedy",
     bestTimeToVisit: "March-May, September-November",
     avgTemp: {
       summer: "27-33°C",
-      winter: "4-10°C"
+      winter: "4-10°C",
     },
     coordinates: { lat: 34.6937, lng: 135.5023 },
-    popularFor: ["Osaka Castle", "Dotonbori", "Universal Studios", "Street Food"],
+    popularFor: [
+      "Osaka Castle",
+      "Dotonbori",
+      "Universal Studios",
+      "Street Food",
+    ],
     image: "/assets/images/osaka.jpg",
-    color: "from-orange-400 to-yellow-600"
+    color: "from-orange-400 to-yellow-600",
   },
-
-  // USA Cities
   {
     id: 7,
     name: "New York",
-    countryId: 3,
+    countryId: 15, // USA
     population: 8419000,
     description: "The city that never sleeps, global financial capital",
     bestTimeToVisit: "April-June, September-November",
     avgTemp: {
       summer: "24-30°C",
-      winter: "-2-4°C"
+      winter: "-2-4°C",
     },
-    coordinates: { lat: 40.7128, lng: -74.0060 },
-    popularFor: ["Statue of Liberty", "Times Square", "Central Park", "Broadway"],
+    coordinates: { lat: 40.7128, lng: -74.006 },
+    popularFor: [
+      "Statue of Liberty",
+      "Times Square",
+      "Central Park",
+      "Broadway",
+    ],
     image: "/assets/images/newyork.jpg",
-    color: "from-indigo-400 to-blue-600"
+    color: "from-indigo-400 to-blue-600",
   },
   {
     id: 8,
     name: "Los Angeles",
-    countryId: 3,
+    countryId: 15, // USA
     population: 3980000,
     description: "Entertainment capital with beaches and Hollywood glamour",
     bestTimeToVisit: "March-May, September-November",
     avgTemp: {
       summer: "22-28°C",
-      winter: "9-20°C"
+      winter: "9-20°C",
     },
     coordinates: { lat: 34.0522, lng: -118.2437 },
-    popularFor: ["Hollywood", "Santa Monica Beach", "Universal Studios", "Celebrity Culture"],
+    popularFor: [
+      "Hollywood",
+      "Santa Monica Beach",
+      "Universal Studios",
+      "Celebrity Culture",
+    ],
     image: "/assets/images/losangeles.jpg",
-    color: "from-amber-400 to-orange-600"
+    color: "from-amber-400 to-orange-600",
   },
   {
     id: 9,
     name: "Las Vegas",
-    countryId: 3,
+    countryId: 15, // USA
     population: 641676,
     description: "Entertainment capital with world-class casinos and shows",
     bestTimeToVisit: "March-May, September-November",
     avgTemp: {
       summer: "32-40°C",
-      winter: "4-15°C"
+      winter: "4-15°C",
     },
     coordinates: { lat: 36.1699, lng: -115.1398 },
-    popularFor: ["Casinos", "Entertainment Shows", "Nightlife", "Grand Canyon Trips"],
+    popularFor: [
+      "Casinos",
+      "Entertainment Shows",
+      "Nightlife",
+      "Grand Canyon Trips",
+    ],
     image: "/assets/images/lasvegas.jpg",
-    color: "from-purple-400 to-pink-600"
+    color: "from-purple-400 to-pink-600",
   },
-
-  // Italy Cities
   {
     id: 10,
     name: "Rome",
-    countryId: 4,
+    countryId: 2, // Italy
     population: 2873000,
     description: "Eternal city with ancient history and iconic landmarks",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "25-30°C",
-      winter: "3-13°C"
+      winter: "3-13°C",
     },
     coordinates: { lat: 41.9028, lng: 12.4964 },
     popularFor: ["Colosseum", "Vatican City", "Roman Forum", "Italian Cuisine"],
     image: "/assets/images/rome.jpg",
-    color: "from-yellow-400 to-red-600"
+    color: "from-yellow-400 to-red-600",
   },
   {
     id: 11,
     name: "Venice",
-    countryId: 4,
+    countryId: 2, // Italy
     population: 261905,
     description: "City of canals, romantic gondola rides, and architecture",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "23-28°C",
-      winter: "0-8°C"
+      winter: "0-8°C",
     },
     coordinates: { lat: 45.4408, lng: 12.3155 },
-    popularFor: ["Grand Canal", "St. Mark's Square", "Gondola Rides", "Carnival"],
+    popularFor: [
+      "Grand Canal",
+      "St. Mark's Square",
+      "Gondola Rides",
+      "Carnival",
+    ],
     image: "/assets/images/venice.jpg",
-    color: "from-blue-300 to-teal-500"
+    color: "from-blue-300 to-teal-500",
   },
   {
     id: 12,
     name: "Florence",
-    countryId: 4,
+    countryId: 2, // Italy
     population: 380948,
-    description: "Birthplace of Renaissance with incredible art and architecture",
+    description:
+      "Birthplace of Renaissance with incredible art and architecture",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "25-31°C",
-      winter: "3-10°C"
+      winter: "3-10°C",
     },
     coordinates: { lat: 43.7696, lng: 11.2558 },
     popularFor: ["Duomo", "Uffizi Gallery", "David Statue", "Renaissance Art"],
     image: "/assets/images/florence.jpg",
-    color: "from-orange-300 to-red-500"
+    color: "from-orange-300 to-red-500",
   },
-
-  // Thailand Cities
   {
     id: 13,
     name: "Bangkok",
-    countryId: 5,
+    countryId: 9, // Thailand
     population: 10539000,
     description: "Vibrant capital with temples, markets, and street food",
     bestTimeToVisit: "November-February",
     avgTemp: {
       summer: "30-35°C",
-      winter: "25-30°C"
+      winter: "25-30°C",
     },
     coordinates: { lat: 13.7563, lng: 100.5018 },
     popularFor: ["Grand Palace", "Wat Arun", "Floating Markets", "Street Food"],
     image: "/assets/images/bangkok.jpg",
-    color: "from-purple-400 to-blue-600"
+    color: "from-purple-400 to-blue-600",
   },
   {
     id: 14,
     name: "Phuket",
-    countryId: 5,
+    countryId: 9, // Thailand
     population: 416582,
     description: "Tropical paradise with beautiful beaches and islands",
     bestTimeToVisit: "November-April",
     avgTemp: {
       summer: "28-33°C",
-      winter: "25-30°C"
+      winter: "25-30°C",
     },
     coordinates: { lat: 7.8804, lng: 98.3923 },
-    popularFor: ["Patong Beach", "Phi Phi Islands", "James Bond Island", "Nightlife"],
+    popularFor: [
+      "Patong Beach",
+      "Phi Phi Islands",
+      "James Bond Island",
+      "Nightlife",
+    ],
     image: "/assets/images/phuket.jpg",
-    color: "from-emerald-400 to-cyan-600"
+    color: "from-emerald-400 to-cyan-600",
   },
   {
     id: 15,
     name: "Chiang Mai",
-    countryId: 5,
+    countryId: 9, // Thailand
     population: 131091,
-    description: "Cultural hub in northern mountains with temples and festivals",
+    description:
+      "Cultural hub in northern mountains with temples and festivals",
     bestTimeToVisit: "November-February",
     avgTemp: {
       summer: "25-35°C",
-      winter: "15-25°C"
+      winter: "15-25°C",
     },
     coordinates: { lat: 18.7883, lng: 98.9853 },
-    popularFor: ["Doi Suthep", "Night Bazaar", "Elephant Sanctuaries", "Yi Peng Festival"],
+    popularFor: [
+      "Doi Suthep",
+      "Night Bazaar",
+      "Elephant Sanctuaries",
+      "Yi Peng Festival",
+    ],
     image: "/assets/images/chiangmai.jpg",
-    color: "from-amber-400 to-orange-600"
+    color: "from-amber-400 to-orange-600",
   },
-
-  // Australia Cities
   {
     id: 16,
     name: "Sydney",
-    countryId: 6,
+    countryId: 31, // Australia
     population: 5312000,
     description: "Harbor city with iconic opera house and beaches",
     bestTimeToVisit: "September-November, March-May",
     avgTemp: {
       summer: "22-26°C",
-      winter: "8-17°C"
+      winter: "8-17°C",
     },
     coordinates: { lat: -33.8688, lng: 151.2093 },
-    popularFor: ["Sydney Opera House", "Harbour Bridge", "Bondi Beach", "Blue Mountains"],
+    popularFor: [
+      "Sydney Opera House",
+      "Harbour Bridge",
+      "Bondi Beach",
+      "Blue Mountains",
+    ],
     image: "/assets/images/sydney.jpg",
-    color: "from-sky-400 to-blue-600"
+    color: "from-sky-400 to-blue-600",
   },
   {
     id: 17,
     name: "Melbourne",
-    countryId: 6,
+    countryId: 31, // Australia
     population: 5078000,
     description: "Cultural capital known for coffee, art, and sports",
     bestTimeToVisit: "September-November, March-May",
     avgTemp: {
       summer: "20-26°C",
-      winter: "6-14°C"
+      winter: "6-14°C",
     },
     coordinates: { lat: -37.8136, lng: 144.9631 },
-    popularFor: ["Federation Square", "Great Ocean Road", "Coffee Culture", "Australian Open"],
+    popularFor: [
+      "Federation Square",
+      "Great Ocean Road",
+      "Coffee Culture",
+      "Australian Open",
+    ],
     image: "/assets/images/melbourne.jpg",
-    color: "from-gray-400 to-indigo-600"
+    color: "from-gray-400 to-indigo-600",
   },
   {
     id: 18,
     name: "Brisbane",
-    countryId: 6,
+    countryId: 31, // Australia
     population: 2480000,
     description: "Sunshine city with riverfront parks and nearby islands",
     bestTimeToVisit: "March-May, September-November",
     avgTemp: {
       summer: "21-30°C",
-      winter: "11-21°C"
+      winter: "11-21°C",
     },
     coordinates: { lat: -27.4698, lng: 153.0251 },
-    popularFor: ["South Bank", "Gold Coast", "Sunshine Coast", "Lone Pine Koala Sanctuary"],
+    popularFor: [
+      "South Bank",
+      "Gold Coast",
+      "Sunshine Coast",
+      "Lone Pine Koala Sanctuary",
+    ],
     image: "/assets/images/brisbane.jpg",
-    color: "from-yellow-400 to-orange-600"
+    color: "from-yellow-400 to-orange-600",
   },
-
-  // UAE Cities
   {
     id: 19,
     name: "Dubai",
-    countryId: 7,
+    countryId: 36, // UAE
     population: 3331000,
     description: "Modern metropolis with futuristic architecture and luxury",
     bestTimeToVisit: "November-March",
     avgTemp: {
       summer: "35-45°C",
-      winter: "14-24°C"
+      winter: "14-24°C",
     },
     coordinates: { lat: 25.2048, lng: 55.2708 },
-    popularFor: ["Burj Khalifa", "Palm Jumeirah", "Desert Safari", "Luxury Shopping"],
+    popularFor: [
+      "Burj Khalifa",
+      "Palm Jumeirah",
+      "Desert Safari",
+      "Luxury Shopping",
+    ],
     image: "/assets/images/dubai.jpg",
-    color: "from-cyan-400 to-blue-600"
+    color: "from-cyan-400 to-blue-600",
   },
   {
     id: 20,
     name: "Abu Dhabi",
-    countryId: 7,
+    countryId: 36, // UAE
     population: 1483000,
     description: "Capital city with cultural landmarks and modern architecture",
     bestTimeToVisit: "November-March",
     avgTemp: {
       summer: "35-45°C",
-      winter: "13-24°C"
+      winter: "13-24°C",
     },
     coordinates: { lat: 24.4539, lng: 54.3773 },
-    popularFor: ["Sheikh Zayed Mosque", "Louvre Abu Dhabi", "Ferrari World", "Corniche"],
+    popularFor: [
+      "Sheikh Zayed Mosque",
+      "Louvre Abu Dhabi",
+      "Ferrari World",
+      "Corniche",
+    ],
     image: "/assets/images/abudhabi.jpg",
-    color: "from-emerald-400 to-green-600"
+    color: "from-emerald-400 to-green-600",
   },
-
-  // Spain Cities
   {
     id: 21,
     name: "Barcelona",
-    countryId: 8,
+    countryId: 3, // Spain
     population: 1620000,
-    description: "Cosmopolitan city with Gaudí architecture and Mediterranean beaches",
+    description:
+      "Cosmopolitan city with Gaudí architecture and Mediterranean beaches",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "24-28°C",
-      winter: "8-15°C"
+      winter: "8-15°C",
     },
     coordinates: { lat: 41.3851, lng: 2.1734 },
     popularFor: ["Sagrada Familia", "Park Güell", "Gothic Quarter", "Tapas"],
     image: "/assets/images/barcelona.jpg",
-    color: "from-red-400 to-yellow-600"
+    color: "from-red-400 to-yellow-600",
   },
   {
     id: 22,
     name: "Madrid",
-    countryId: 8,
+    countryId: 3, // Spain
     population: 3223000,
     description: "Vibrant capital with art museums, parks, and nightlife",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "22-32°C",
-      winter: "3-10°C"
+      winter: "3-10°C",
     },
     coordinates: { lat: 40.4168, lng: -3.7038 },
     popularFor: ["Prado Museum", "Royal Palace", "Retiro Park", "Flamenco"],
     image: "/assets/images/madrid.jpg",
-    color: "from-blue-400 to-red-600"
+    color: "from-blue-400 to-red-600",
   },
-
-  // Indonesia Cities
   {
     id: 23,
     name: "Bali",
-    countryId: 9,
+    countryId: 10, // Indonesia
     population: 4317000,
-    description: "Island paradise with temples, beaches, and spiritual retreats",
+    description:
+      "Island paradise with temples, beaches, and spiritual retreats",
     bestTimeToVisit: "April-October",
     avgTemp: {
       summer: "27-32°C",
-      winter: "26-31°C"
+      winter: "26-31°C",
     },
     coordinates: { lat: -8.4095, lng: 115.1889 },
     popularFor: ["Uluwatu Temple", "Rice Terraces", "Beaches", "Yoga Retreats"],
     image: "/assets/images/bali.jpg",
-    color: "from-green-400 to-blue-600"
+    color: "from-green-400 to-blue-600",
   },
-
-  // Greece Cities
   {
     id: 24,
     name: "Athens",
-    countryId: 10,
+    countryId: 4, // Greece
     population: 664046,
-    description: "Historic capital birthplace of democracy and Western civilization",
+    description:
+      "Historic capital birthplace of democracy and Western civilization",
     bestTimeToVisit: "April-June, September-October",
     avgTemp: {
       summer: "26-32°C",
-      winter: "8-15°C"
+      winter: "8-15°C",
     },
     coordinates: { lat: 37.9838, lng: 23.7275 },
     popularFor: ["Acropolis", "Parthenon", "Ancient Agora", "Greek Cuisine"],
     image: "/assets/images/athens.jpg",
-    color: "from-blue-400 to-white"
+    color: "from-blue-400 to-white",
   },
   {
     id: 25,
     name: "Santorini",
-    countryId: 10,
+    countryId: 4, // Greece
     population: 15550,
-    description: "Stunning volcanic island with white-washed buildings and sunsets",
+    description:
+      "Stunning volcanic island with white-washed buildings and sunsets",
     bestTimeToVisit: "May-June, September-October",
     avgTemp: {
       summer: "24-28°C",
-      winter: "11-15°C"
+      winter: "11-15°C",
     },
     coordinates: { lat: 36.3932, lng: 25.4615 },
-    popularFor: ["Oia Sunset", "Caldera Views", "Volcanic Beaches", "Wine Tasting"],
+    popularFor: [
+      "Oia Sunset",
+      "Caldera Views",
+      "Volcanic Beaches",
+      "Wine Tasting",
+    ],
     image: "/assets/images/santorini.jpg",
-    color: "from-cyan-400 to-white"
-  }
+    color: "from-cyan-400 to-white",
+  },
+
+  // NEW CITIES START HERE (75 cities added)
+
+  // France (countryId: 1) - Additional 3 cities
+  {
+    id: 26,
+    name: "Marseille",
+    countryId: 1,
+    population: 861635,
+    description:
+      "Historic port city with Mediterranean charm and diverse culture",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "23-29°C",
+      winter: "5-12°C",
+    },
+    coordinates: { lat: 43.2965, lng: 5.3698 },
+    popularFor: [
+      "Old Port",
+      "Calanques",
+      "Basilique Notre-Dame",
+      "Bouillabaisse",
+    ],
+    image: "/assets/images/marseille.jpg",
+    color: "from-blue-400 to-teal-600",
+  },
+  {
+    id: 27,
+    name: "Bordeaux",
+    countryId: 1,
+    population: 257068,
+    description: "World wine capital with elegant architecture and vineyards",
+    bestTimeToVisit: "May-October",
+    avgTemp: {
+      summer: "20-27°C",
+      winter: "3-10°C",
+    },
+    coordinates: { lat: 44.8378, lng: -0.5792 },
+    popularFor: [
+      "Wine Tasting",
+      "La Cité du Vin",
+      "Place de la Bourse",
+      "Saint-Émilion",
+    ],
+    image: "/assets/images/bordeaux.jpg",
+    color: "from-purple-400 to-red-600",
+  },
+  {
+    id: 28,
+    name: "Strasbourg",
+    countryId: 1,
+    population: 280966,
+    description: "European capital with Gothic cathedral and Christmas markets",
+    bestTimeToVisit: "April-October, December",
+    avgTemp: {
+      summer: "18-25°C",
+      winter: "-1-5°C",
+    },
+    coordinates: { lat: 48.5734, lng: 7.7521 },
+    popularFor: [
+      "Strasbourg Cathedral",
+      "European Parliament",
+      "Christmas Markets",
+      "Petite France",
+    ],
+    image: "/assets/images/strasbourg.jpg",
+    color: "from-blue-500 to-red-500",
+  },
+
+  // Japan (countryId: 8) - Additional 3 cities
+  {
+    id: 29,
+    name: "Hiroshima",
+    countryId: 8,
+    population: 1198000,
+    description:
+      "City of peace with historical significance and beautiful islands",
+    bestTimeToVisit: "April-May, October-November",
+    avgTemp: {
+      summer: "26-31°C",
+      winter: "3-10°C",
+    },
+    coordinates: { lat: 34.3853, lng: 132.4553 },
+    popularFor: [
+      "Peace Memorial Park",
+      "Miyajima Island",
+      "Atomic Bomb Dome",
+      "Okonomiyaki",
+    ],
+    image: "/assets/images/hiroshima.jpg",
+    color: "from-gray-400 to-blue-600",
+  },
+  {
+    id: 30,
+    name: "Sapporo",
+    countryId: 8,
+    population: 1952000,
+    description: "Northern city famous for snow festival and beer",
+    bestTimeToVisit: "July-August, January-February",
+    avgTemp: {
+      summer: "20-26°C",
+      winter: "-4 to -1°C",
+    },
+    coordinates: { lat: 43.0618, lng: 141.3545 },
+    popularFor: ["Snow Festival", "Sapporo Beer", "Ski Resorts", "Ramen"],
+    image: "/assets/images/sapporo.jpg",
+    color: "from-white to-blue-500",
+  },
+  {
+    id: 31,
+    name: "Fukuoka",
+    countryId: 8,
+    population: 1590000,
+    description: "Gateway to Asia with vibrant food scene and ancient temples",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "27-32°C",
+      winter: "4-12°C",
+    },
+    coordinates: { lat: 33.5904, lng: 130.4017 },
+    popularFor: [
+      "Ramen",
+      "Hakata Dontaku Festival",
+      "Fukuoka Tower",
+      "Canal City",
+    ],
+    image: "/assets/images/fukuoka.jpg",
+    color: "from-yellow-400 to-red-600",
+  },
+
+  // USA (countryId: 15) - Additional 4 cities
+  {
+    id: 32,
+    name: "Chicago",
+    countryId: 15,
+    population: 2716000,
+    description: "Windy City with stunning architecture and deep-dish pizza",
+    bestTimeToVisit: "May-June, September-October",
+    avgTemp: {
+      summer: "21-28°C",
+      winter: "-6 to 2°C",
+    },
+    coordinates: { lat: 41.8781, lng: -87.6298 },
+    popularFor: [
+      "Willis Tower",
+      "Millennium Park",
+      "Deep-Dish Pizza",
+      "Lake Michigan",
+    ],
+    image: "/assets/images/chicago.jpg",
+    color: "from-blue-400 to-gray-600",
+  },
+  {
+    id: 33,
+    name: "Miami",
+    countryId: 15,
+    population: 442241,
+    description:
+      "Tropical paradise with Art Deco architecture and Latin culture",
+    bestTimeToVisit: "March-May, November-February",
+    avgTemp: {
+      summer: "28-32°C",
+      winter: "15-24°C",
+    },
+    coordinates: { lat: 25.7617, lng: -80.1918 },
+    popularFor: [
+      "South Beach",
+      "Art Deco District",
+      "Everglades",
+      "Latin Culture",
+    ],
+    image: "/assets/images/miami.jpg",
+    color: "from-pink-400 to-cyan-600",
+  },
+  {
+    id: 34,
+    name: "San Francisco",
+    countryId: 15,
+    population: 883305,
+    description: "Hilly city known for Golden Gate Bridge and tech innovation",
+    bestTimeToVisit: "September-November",
+    avgTemp: {
+      summer: "15-21°C",
+      winter: "8-15°C",
+    },
+    coordinates: { lat: 37.7749, lng: -122.4194 },
+    popularFor: [
+      "Golden Gate Bridge",
+      "Alcatraz",
+      "Cable Cars",
+      "Silicon Valley",
+    ],
+    image: "/assets/images/sanfrancisco.jpg",
+    color: "from-orange-400 to-red-600",
+  },
+  {
+    id: 35,
+    name: "Seattle",
+    countryId: 15,
+    population: 744955,
+    description:
+      "Emerald City with coffee culture, tech companies, and natural beauty",
+    bestTimeToVisit: "June-September",
+    avgTemp: {
+      summer: "18-24°C",
+      winter: "3-8°C",
+    },
+    coordinates: { lat: 47.6062, lng: -122.3321 },
+    popularFor: [
+      "Space Needle",
+      "Pike Place Market",
+      "Coffee Culture",
+      "Tech Companies",
+    ],
+    image: "/assets/images/seattle.jpg",
+    color: "from-emerald-400 to-blue-600",
+  },
+
+  // Italy (countryId: 2) - Additional 3 cities
+  {
+    id: 36,
+    name: "Milan",
+    countryId: 2,
+    population: 1378000,
+    description: "Fashion and design capital with Gothic architecture",
+    bestTimeToVisit: "April-June, September-October",
+    avgTemp: {
+      summer: "22-30°C",
+      winter: "0-7°C",
+    },
+    coordinates: { lat: 45.4642, lng: 9.19 },
+    popularFor: [
+      "Duomo di Milano",
+      "La Scala",
+      "Fashion Week",
+      "The Last Supper",
+    ],
+    image: "/assets/images/milan.jpg",
+    color: "from-gray-400 to-yellow-600",
+  },
+  {
+    id: 37,
+    name: "Naples",
+    countryId: 2,
+    population: 967069,
+    description:
+      "Vibrant city birthplace of pizza with nearby Pompeii and Vesuvius",
+    bestTimeToVisit: "April-June, September-October",
+    avgTemp: {
+      summer: "24-30°C",
+      winter: "4-14°C",
+    },
+    coordinates: { lat: 40.8518, lng: 14.2681 },
+    popularFor: [
+      "Pizza Margherita",
+      "Pompeii Ruins",
+      "Mount Vesuvius",
+      "Historic Center",
+    ],
+    image: "/assets/images/naples.jpg",
+    color: "from-blue-400 to-yellow-600",
+  },
+  {
+    id: 38,
+    name: "Verona",
+    countryId: 2,
+    population: 258031,
+    description:
+      "Romantic city of Shakespeare's Romeo and Juliet with Roman arena",
+    bestTimeToVisit: "April-June, September-October",
+    avgTemp: {
+      summer: "20-28°C",
+      winter: "0-6°C",
+    },
+    coordinates: { lat: 45.4384, lng: 10.9916 },
+    popularFor: [
+      "Juliet's Balcony",
+      "Roman Arena",
+      "Shakespeare Setting",
+      "Valpolicella Wine",
+    ],
+    image: "/assets/images/verona.jpg",
+    color: "from-pink-400 to-red-600",
+  },
+
+  // Thailand (countryId: 9) - Additional 2 cities
+  {
+    id: 39,
+    name: "Krabi",
+    countryId: 9,
+    population: 52837,
+    description:
+      "Andaman coastal province with limestone cliffs and clear waters",
+    bestTimeToVisit: "November-April",
+    avgTemp: {
+      summer: "28-34°C",
+      winter: "24-31°C",
+    },
+    coordinates: { lat: 8.0863, lng: 98.9063 },
+    popularFor: [
+      "Railay Beach",
+      "Phi Phi Islands",
+      "Rock Climbing",
+      "Emerald Pool",
+    ],
+    image: "/assets/images/krabi.jpg",
+    color: "from-teal-400 to-green-600",
+  },
+  {
+    id: 40,
+    name: "Pattaya",
+    countryId: 9,
+    population: 119532,
+    description:
+      "Coastal resort city known for beaches, nightlife, and water sports",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "28-34°C",
+      winter: "24-31°C",
+    },
+    coordinates: { lat: 12.9236, lng: 100.8825 },
+    popularFor: ["Walking Street", "Beaches", "Water Sports", "Coral Islands"],
+    image: "/assets/images/pattaya.jpg",
+    color: "from-amber-400 to-orange-600",
+  },
+
+  // Australia (countryId: 31) - Additional 3 cities
+  {
+    id: 41,
+    name: "Perth",
+    countryId: 31,
+    population: 2059484,
+    description: "Isolated coastal city with beautiful beaches and parks",
+    bestTimeToVisit: "September-November, March-May",
+    avgTemp: {
+      summer: "23-30°C",
+      winter: "8-18°C",
+    },
+    coordinates: { lat: -31.9505, lng: 115.8605 },
+    popularFor: ["Kings Park", "Rottnest Island", "Swan River", "Quokkas"],
+    image: "/assets/images/perth.jpg",
+    color: "from-cyan-400 to-blue-600",
+  },
+  {
+    id: 42,
+    name: "Adelaide",
+    countryId: 31,
+    population: 1345777,
+    description: "City of churches with wine regions and festival culture",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "22-29°C",
+      winter: "7-16°C",
+    },
+    coordinates: { lat: -34.9285, lng: 138.6007 },
+    popularFor: [
+      "Barossa Valley",
+      "Adelaide Festival",
+      "Central Market",
+      "Kangaroo Island",
+    ],
+    image: "/assets/images/adelaide.jpg",
+    color: "from-blue-400 to-purple-600",
+  },
+  {
+    id: 43,
+    name: "Gold Coast",
+    countryId: 31,
+    population: 638090,
+    description: "Surfing paradise with theme parks and skyscrapers",
+    bestTimeToVisit: "September-November, March-May",
+    avgTemp: {
+      summer: "21-28°C",
+      winter: "12-21°C",
+    },
+    coordinates: { lat: -28.0167, lng: 153.4 },
+    popularFor: ["Surfers Paradise", "Theme Parks", "Beaches", "Nightlife"],
+    image: "/assets/images/goldcoast.jpg",
+    color: "from-yellow-400 to-blue-600",
+  },
+
+  // UAE (countryId: 36) - Additional 2 cities
+  {
+    id: 44,
+    name: "Sharjah",
+    countryId: 36,
+    population: 1457865,
+    description:
+      "Cultural capital with museums, heritage areas, and family attractions",
+    bestTimeToVisit: "November-March",
+    avgTemp: {
+      summer: "35-42°C",
+      winter: "13-23°C",
+    },
+    coordinates: { lat: 25.3463, lng: 55.4209 },
+    popularFor: [
+      "Sharjah Museum",
+      "Al Noor Island",
+      "Khalid Lagoon",
+      "Cultural Heritage",
+    ],
+    image: "/assets/images/sharjah.jpg",
+    color: "from-amber-400 to-red-600",
+  },
+  {
+    id: 45,
+    name: "Ajman",
+    countryId: 36,
+    population: 490035,
+    description:
+      "Smallest emirate with beautiful beaches and traditional markets",
+    bestTimeToVisit: "November-March",
+    avgTemp: {
+      summer: "35-42°C",
+      winter: "14-24°C",
+    },
+    coordinates: { lat: 25.4052, lng: 55.5136 },
+    popularFor: [
+      "Ajman Beach",
+      "Ajman Museum",
+      "Traditional Souks",
+      "Corniche",
+    ],
+    image: "/assets/images/ajman.jpg",
+    color: "from-green-400 to-white",
+  },
+
+  // Spain (countryId: 3) - Additional 3 cities
+  {
+    id: 46,
+    name: "Seville",
+    countryId: 3,
+    population: 688711,
+    description:
+      "Andalusian city famous for flamenco, orange trees, and Moorish architecture",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "25-36°C",
+      winter: "5-16°C",
+    },
+    coordinates: { lat: 37.3891, lng: -5.9845 },
+    popularFor: [
+      "Alcázar Palace",
+      "Seville Cathedral",
+      "Flamenco Shows",
+      "April Fair",
+    ],
+    image: "/assets/images/seville.jpg",
+    color: "from-orange-400 to-yellow-600",
+  },
+  {
+    id: 47,
+    name: "Valencia",
+    countryId: 3,
+    population: 789744,
+    description:
+      "Coastal city birthplace of paella with futuristic architecture",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "23-30°C",
+      winter: "7-17°C",
+    },
+    coordinates: { lat: 39.4699, lng: -0.3763 },
+    popularFor: [
+      "City of Arts and Sciences",
+      "Paella",
+      "Las Fallas Festival",
+      "Turia Garden",
+    ],
+    image: "/assets/images/valencia.jpg",
+    color: "from-amber-400 to-orange-600",
+  },
+  {
+    id: 48,
+    name: "Granada",
+    countryId: 3,
+    population: 232208,
+    description: "Moorish city with the magnificent Alhambra palace",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "20-34°C",
+      winter: "1-13°C",
+    },
+    coordinates: { lat: 37.1773, lng: -3.5986 },
+    popularFor: [
+      "Alhambra",
+      "Generalife Gardens",
+      "Albayzín Quarter",
+      "Tapas Culture",
+    ],
+    image: "/assets/images/granada.jpg",
+    color: "from-red-400 to-yellow-600",
+  },
+
+  // Indonesia (countryId: 10) - Additional 3 cities
+  {
+    id: 49,
+    name: "Jakarta",
+    countryId: 10,
+    population: 10560000,
+    description: "Bustling capital with diverse culture and modern skyscrapers",
+    bestTimeToVisit: "June-September",
+    avgTemp: {
+      summer: "28-33°C",
+      winter: "26-31°C",
+    },
+    coordinates: { lat: -6.2088, lng: 106.8456 },
+    popularFor: [
+      "National Monument",
+      "Old Town",
+      "Shopping Malls",
+      "Indonesian Cuisine",
+    ],
+    image: "/assets/images/jakarta.jpg",
+    color: "from-red-400 to-white",
+  },
+  {
+    id: 50,
+    name: "Yogyakarta",
+    countryId: 10,
+    population: 422732,
+    description:
+      "Cultural heart of Java with ancient temples and traditional arts",
+    bestTimeToVisit: "April-October",
+    avgTemp: {
+      summer: "26-32°C",
+      winter: "24-30°C",
+    },
+    coordinates: { lat: -7.7956, lng: 110.3695 },
+    popularFor: [
+      "Borobudur Temple",
+      "Prambanan Temple",
+      "Silver Craft",
+      "Batik",
+    ],
+    image: "/assets/images/yogyakarta.jpg",
+    color: "from-purple-400 to-green-600",
+  },
+  {
+    id: 51,
+    name: "Bandung",
+    countryId: 10,
+    population: 2500331,
+    description:
+      "City of flowers with cool climate, tea plantations, and art deco architecture",
+    bestTimeToVisit: "April-October",
+    avgTemp: {
+      summer: "20-27°C",
+      winter: "18-25°C",
+    },
+    coordinates: { lat: -6.9175, lng: 107.6191 },
+    popularFor: [
+      "Tea Plantations",
+      "Art Deco Architecture",
+      "Factory Outlets",
+      "Volcanic Hot Springs",
+    ],
+    image: "/assets/images/bandung.jpg",
+    color: "from-green-400 to-blue-600",
+  },
+
+  // Greece (countryId: 4) - Additional 2 cities
+  {
+    id: 52,
+    name: "Mykonos",
+    countryId: 4,
+    population: 10400,
+    description:
+      "Cosmopolitan island known for nightlife, beaches, and windmills",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "24-28°C",
+      winter: "10-15°C",
+    },
+    coordinates: { lat: 37.4467, lng: 25.3289 },
+    popularFor: ["Mykonos Town", "Party Beaches", "Little Venice", "Windmills"],
+    image: "/assets/images/mykonos.jpg",
+    color: "from-white to-blue-400",
+  },
+  {
+    id: 53,
+    name: "Thessaloniki",
+    countryId: 4,
+    population: 315196,
+    description: "Cultural capital of northern Greece with Byzantine history",
+    bestTimeToVisit: "May-June, September-October",
+    avgTemp: {
+      summer: "25-31°C",
+      winter: "4-12°C",
+    },
+    coordinates: { lat: 40.6401, lng: 22.9444 },
+    popularFor: [
+      "White Tower",
+      "Byzantine Walls",
+      "Aristotle Square",
+      "Cuisine",
+    ],
+    image: "/assets/images/thessaloniki.jpg",
+    color: "from-blue-500 to-white",
+  },
+
+  // Germany (countryId: 5) - 4 cities
+  {
+    id: 54,
+    name: "Berlin",
+    countryId: 5,
+    population: 3669491,
+    description: "Vibrant capital with rich history, art scene, and nightlife",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "18-24°C",
+      winter: "-1 to 4°C",
+    },
+    coordinates: { lat: 52.52, lng: 13.405 },
+    popularFor: [
+      "Berlin Wall",
+      "Brandenburg Gate",
+      "Museum Island",
+      "Nightlife",
+    ],
+    image: "/assets/images/berlin.jpg",
+    color: "from-black to-red-600",
+  },
+  {
+    id: 55,
+    name: "Munich",
+    countryId: 5,
+    population: 1471508,
+    description:
+      "Bavarian capital famous for Oktoberfest and historic architecture",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "17-24°C",
+      winter: "-3 to 4°C",
+    },
+    coordinates: { lat: 48.1351, lng: 11.582 },
+    popularFor: [
+      "Oktoberfest",
+      "Neuschwanstein Castle",
+      "English Garden",
+      "Beer Halls",
+    ],
+    image: "/assets/images/munich.jpg",
+    color: "from-blue-400 to-white",
+  },
+  {
+    id: 56,
+    name: "Hamburg",
+    countryId: 5,
+    population: 1841179,
+    description:
+      "Port city with maritime history, canals, and entertainment district",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "17-22°C",
+      winter: "-1 to 4°C",
+    },
+    coordinates: { lat: 53.5511, lng: 9.9937 },
+    popularFor: [
+      "Port of Hamburg",
+      "Reeperbahn",
+      "Miniatur Wunderland",
+      "Canals",
+    ],
+    image: "/assets/images/hamburg.jpg",
+    color: "from-blue-500 to-red-600",
+  },
+  {
+    id: 57,
+    name: "Cologne",
+    countryId: 5,
+    population: 1086000,
+    description:
+      "Historic city with magnificent cathedral and carnival celebrations",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "18-24°C",
+      winter: "0-6°C",
+    },
+    coordinates: { lat: 50.9375, lng: 6.9603 },
+    popularFor: ["Cologne Cathedral", "Carnival", "Old Town", "Kölsch Beer"],
+    image: "/assets/images/cologne.jpg",
+    color: "from-gray-400 to-red-600",
+  },
+
+  // United Kingdom (countryId: 6) - 4 cities
+  {
+    id: 58,
+    name: "London",
+    countryId: 6,
+    population: 8982000,
+    description: "Historic capital with royal heritage and global influence",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "18-23°C",
+      winter: "2-8°C",
+    },
+    coordinates: { lat: 51.5074, lng: -0.1278 },
+    popularFor: ["Buckingham Palace", "Big Ben", "British Museum", "West End"],
+    image: "/assets/images/london.jpg",
+    color: "from-red-600 to-blue-600",
+  },
+  {
+    id: 59,
+    name: "Edinburgh",
+    countryId: 6,
+    population: 524930,
+    description: "Scottish capital with medieval Old Town and volcanic castle",
+    bestTimeToVisit: "June-August",
+    avgTemp: {
+      summer: "13-19°C",
+      winter: "1-7°C",
+    },
+    coordinates: { lat: 55.9533, lng: -3.1883 },
+    popularFor: [
+      "Edinburgh Castle",
+      "Royal Mile",
+      "Edinburgh Festival",
+      "Arthur's Seat",
+    ],
+    image: "/assets/images/edinburgh.jpg",
+    color: "from-gray-400 to-blue-600",
+  },
+  {
+    id: 60,
+    name: "Manchester",
+    countryId: 6,
+    population: 547627,
+    description: "Industrial revolution city turned cultural and sporting hub",
+    bestTimeToVisit: "June-August",
+    avgTemp: {
+      summer: "15-20°C",
+      winter: "2-7°C",
+    },
+    coordinates: { lat: 53.4808, lng: -2.2426 },
+    popularFor: [
+      "Football Clubs",
+      "Music Scene",
+      "Industrial Heritage",
+      "Northern Quarter",
+    ],
+    image: "/assets/images/manchester.jpg",
+    color: "from-red-400 to-blue-400",
+  },
+  {
+    id: 61,
+    name: "Liverpool",
+    countryId: 6,
+    population: 498042,
+    description: "Maritime city famous for The Beatles and football clubs",
+    bestTimeToVisit: "June-August",
+    avgTemp: {
+      summer: "15-20°C",
+      winter: "2-7°C",
+    },
+    coordinates: { lat: 53.4084, lng: -2.9916 },
+    popularFor: [
+      "The Beatles",
+      "Liverpool FC",
+      "Albert Dock",
+      "Maritime History",
+    ],
+    image: "/assets/images/liverpool.jpg",
+    color: "from-red-600 to-blue-600",
+  },
+
+  // Portugal (countryId: 7) - 3 cities
+  {
+    id: 62,
+    name: "Lisbon",
+    countryId: 7,
+    population: 504718,
+    description:
+      "Hilly coastal capital with colorful architecture and fado music",
+    bestTimeToVisit: "March-May, September-October",
+    avgTemp: {
+      summer: "22-28°C",
+      winter: "8-15°C",
+    },
+    coordinates: { lat: 38.7223, lng: -9.1393 },
+    popularFor: [
+      "Belém Tower",
+      "Alfama District",
+      "Fado Music",
+      "Pastéis de Nata",
+    ],
+    image: "/assets/images/lisbon.jpg",
+    color: "from-yellow-400 to-red-600",
+  },
+  {
+    id: 63,
+    name: "Porto",
+    countryId: 7,
+    population: 237591,
+    description:
+      "Historic port city famous for wine production and riverside charm",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "20-25°C",
+      winter: "5-14°C",
+    },
+    coordinates: { lat: 41.1579, lng: -8.6291 },
+    popularFor: [
+      "Port Wine",
+      "Dom Luís Bridge",
+      "Ribeira District",
+      "Livraria Lello",
+    ],
+    image: "/assets/images/porto.jpg",
+    color: "from-blue-400 to-red-600",
+  },
+  {
+    id: 64,
+    name: "Faro",
+    countryId: 7,
+    population: 64560,
+    description:
+      "Gateway to Algarve with historic old town and beautiful beaches",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "24-29°C",
+      winter: "8-16°C",
+    },
+    coordinates: { lat: 37.0194, lng: -7.9304 },
+    popularFor: ["Algarve Beaches", "Old Town", "Ria Formosa", "Seafood"],
+    image: "/assets/images/faro.jpg",
+    color: "from-amber-400 to-blue-600",
+  },
+
+  // South Korea (countryId: 11) - 3 cities
+  {
+    id: 65,
+    name: "Seoul",
+    countryId: 11,
+    population: 9776000,
+    description:
+      "Dynamic capital blending ancient palaces with modern technology",
+    bestTimeToVisit: "April-May, September-October",
+    avgTemp: {
+      summer: "23-30°C",
+      winter: "-6 to 3°C",
+    },
+    coordinates: { lat: 37.5665, lng: 126.978 },
+    popularFor: [
+      "Gyeongbokgung Palace",
+      "Gangnam District",
+      "K-pop",
+      "Street Food",
+    ],
+    image: "/assets/images/seoul.jpg",
+    color: "from-blue-400 to-red-400",
+  },
+  {
+    id: 66,
+    name: "Busan",
+    countryId: 11,
+    population: 3400000,
+    description:
+      "Coastal city with beautiful beaches, seafood, and film festival",
+    bestTimeToVisit: "April-May, September-October",
+    avgTemp: {
+      summer: "24-29°C",
+      winter: "-1 to 7°C",
+    },
+    coordinates: { lat: 35.1796, lng: 129.0756 },
+    popularFor: [
+      "Haeundae Beach",
+      "Busan Film Festival",
+      "Jagalchi Market",
+      "Temples",
+    ],
+    image: "/assets/images/busan.jpg",
+    color: "from-blue-500 to-red-600",
+  },
+  {
+    id: 67,
+    name: "Jeju Island",
+    countryId: 11,
+    population: 670000,
+    description: "Volcanic island with natural wonders and unique culture",
+    bestTimeToVisit: "April-June, September-November",
+    avgTemp: {
+      summer: "23-28°C",
+      winter: "3-8°C",
+    },
+    coordinates: { lat: 33.4996, lng: 126.5312 },
+    popularFor: [
+      "Hallasan Mountain",
+      "Lava Tubes",
+      "Haenyeo Divers",
+      "Black Pork",
+    ],
+    image: "/assets/images/jeju.jpg",
+    color: "from-green-400 to-blue-600",
+  },
+
+  // Vietnam (countryId: 12) - 3 cities
+  {
+    id: 68,
+    name: "Hanoi",
+    countryId: 12,
+    population: 8053000,
+    description:
+      "Historic capital with French colonial architecture and vibrant streets",
+    bestTimeToVisit: "October-December, March-April",
+    avgTemp: {
+      summer: "28-35°C",
+      winter: "15-20°C",
+    },
+    coordinates: { lat: 21.0278, lng: 105.8342 },
+    popularFor: [
+      "Old Quarter",
+      "Ho Chi Minh Mausoleum",
+      "Street Food",
+      "French Architecture",
+    ],
+    image: "/assets/images/hanoi.jpg",
+    color: "from-red-600 to-yellow-500",
+  },
+  {
+    id: 69,
+    name: "Ho Chi Minh City",
+    countryId: 12,
+    population: 8993000,
+    description:
+      "Dynamic economic hub with French colonial landmarks and street life",
+    bestTimeToVisit: "December-April",
+    avgTemp: {
+      summer: "28-35°C",
+      winter: "22-32°C",
+    },
+    coordinates: { lat: 10.8231, lng: 106.6297 },
+    popularFor: [
+      "War Remnants Museum",
+      "Ben Thanh Market",
+      "French Architecture",
+      "Mekong Delta",
+    ],
+    image: "/assets/images/hochiminh.jpg",
+    color: "from-red-600 to-yellow-500",
+  },
+  {
+    id: 70,
+    name: "Hoi An",
+    countryId: 12,
+    population: 152160,
+    description:
+      "Ancient town with well-preserved architecture and lantern-lit streets",
+    bestTimeToVisit: "February-April",
+    avgTemp: {
+      summer: "28-35°C",
+      winter: "20-25°C",
+    },
+    coordinates: { lat: 15.8801, lng: 108.338 },
+    popularFor: [
+      "Ancient Town",
+      "Tailor Shops",
+      "Lantern Festival",
+      "Riverside",
+    ],
+    image: "/assets/images/hoian.jpg",
+    color: "from-yellow-400 to-red-600",
+  },
+
+  // India (countryId: 13) - 3 cities
+  {
+    id: 71,
+    name: "Delhi",
+    countryId: 13,
+    population: 19000000,
+    description:
+      "Historic capital with Mughal architecture and bustling markets",
+    bestTimeToVisit: "October-March",
+    avgTemp: {
+      summer: "32-40°C",
+      winter: "7-21°C",
+    },
+    coordinates: { lat: 28.7041, lng: 77.1025 },
+    popularFor: ["Red Fort", "India Gate", "Qutub Minar", "Street Food"],
+    image: "/assets/images/delhi.jpg",
+    color: "from-saffron-400 to-green-600",
+  },
+  {
+    id: 72,
+    name: "Mumbai",
+    countryId: 13,
+    population: 20400000,
+    description:
+      "Financial capital with Bollywood, colonial architecture, and beaches",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "30-33°C",
+      winter: "19-26°C",
+    },
+    coordinates: { lat: 19.076, lng: 72.8777 },
+    popularFor: [
+      "Gateway of India",
+      "Marine Drive",
+      "Bollywood",
+      "Elephanta Caves",
+    ],
+    image: "/assets/images/mumbai.jpg",
+    color: "from-blue-600 to-saffron-400",
+  },
+  {
+    id: 73,
+    name: "Jaipur",
+    countryId: 13,
+    population: 3073350,
+    description: "Pink City with royal palaces, forts, and vibrant culture",
+    bestTimeToVisit: "October-March",
+    avgTemp: {
+      summer: "33-40°C",
+      winter: "8-22°C",
+    },
+    coordinates: { lat: 26.9124, lng: 75.7873 },
+    popularFor: [
+      "Hawa Mahal",
+      "Amber Fort",
+      "City Palace",
+      "Pink Architecture",
+    ],
+    image: "/assets/images/jaipur.jpg",
+    color: "from-pink-400 to-amber-600",
+  },
+
+  // Singapore (countryId: 14) - 2 cities
+  {
+    id: 74,
+    name: "Singapore City",
+    countryId: 14,
+    population: 5704000,
+    description:
+      "Garden city with modern architecture and diverse cultural influences",
+    bestTimeToVisit: "February-April",
+    avgTemp: {
+      summer: "27-32°C",
+      winter: "25-30°C",
+    },
+    coordinates: { lat: 1.3521, lng: 103.8198 },
+    popularFor: [
+      "Marina Bay Sands",
+      "Gardens by the Bay",
+      "Sentosa Island",
+      "Hawker Centers",
+    ],
+    image: "/assets/images/singapore.jpg",
+    color: "from-red-400 to-white",
+  },
+  {
+    id: 75,
+    name: "Sentosa",
+    countryId: 14,
+    population: 2000,
+    description:
+      "Island resort with beaches, theme parks, and luxury attractions",
+    bestTimeToVisit: "February-April",
+    avgTemp: {
+      summer: "27-32°C",
+      winter: "25-30°C",
+    },
+    coordinates: { lat: 1.2494, lng: 103.8304 },
+    popularFor: ["Universal Studios", "Beaches", "Resorts World", "Cable Car"],
+    image: "/assets/images/sentosa.jpg",
+    color: "from-blue-400 to-green-600",
+  },
+
+  // Canada (countryId: 16) - 3 cities
+  {
+    id: 76,
+    name: "Toronto",
+    countryId: 16,
+    population: 2930000,
+    description: "Multicultural metropolis with iconic tower and waterfront",
+    bestTimeToVisit: "May-October",
+    avgTemp: {
+      summer: "20-27°C",
+      winter: "-7 to -1°C",
+    },
+    coordinates: { lat: 43.6532, lng: -79.3832 },
+    popularFor: [
+      "CN Tower",
+      "Niagara Falls",
+      "Multicultural Neighborhoods",
+      "Hockey",
+    ],
+    image: "/assets/images/toronto.jpg",
+    color: "from-blue-400 to-red-600",
+  },
+  {
+    id: 77,
+    name: "Vancouver",
+    countryId: 16,
+    population: 631486,
+    description: "Coastal city surrounded by mountains and Pacific Ocean",
+    bestTimeToVisit: "June-September",
+    avgTemp: {
+      summer: "18-22°C",
+      winter: "1-7°C",
+    },
+    coordinates: { lat: 49.2827, lng: -123.1207 },
+    popularFor: [
+      "Stanley Park",
+      "Ski Resorts",
+      "Seafood",
+      "Outdoor Activities",
+    ],
+    image: "/assets/images/vancouver.jpg",
+    color: "from-green-400 to-blue-600",
+  },
+  {
+    id: 78,
+    name: "Montreal",
+    countryId: 16,
+    population: 1780000,
+    description:
+      "French-Canadian city with European charm and vibrant arts scene",
+    bestTimeToVisit: "June-August",
+    avgTemp: {
+      summer: "20-26°C",
+      winter: "-10 to -3°C",
+    },
+    coordinates: { lat: 45.5017, lng: -73.5673 },
+    popularFor: ["Old Montreal", "Mount Royal", "Festivals", "French Culture"],
+    image: "/assets/images/montreal.jpg",
+    color: "from-blue-600 to-red-600",
+  },
+
+  // Mexico (countryId: 17) - 3 cities
+  {
+    id: 79,
+    name: "Mexico City",
+    countryId: 17,
+    population: 9200000,
+    description:
+      "Vibrant capital with Aztec ruins, colonial architecture, and museums",
+    bestTimeToVisit: "March-May",
+    avgTemp: {
+      summer: "18-24°C",
+      winter: "13-21°C",
+    },
+    coordinates: { lat: 19.4326, lng: -99.1332 },
+    popularFor: [
+      "Zócalo",
+      "National Palace",
+      "Frida Kahlo Museum",
+      "Ancient Ruins",
+    ],
+    image: "/assets/images/mexicocity2.jpg",
+    color: "from-green-600 to-white",
+  },
+  {
+    id: 80,
+    name: "Cancun",
+    countryId: 17,
+    population: 888797,
+    description:
+      "Caribbean resort destination with white-sand beaches and Mayan ruins",
+    bestTimeToVisit: "December-April",
+    avgTemp: {
+      summer: "27-33°C",
+      winter: "21-28°C",
+    },
+    coordinates: { lat: 21.1619, lng: -86.8515 },
+    popularFor: ["Beaches", "Mayan Ruins", "Nightlife", "Water Sports"],
+    image: "/assets/images/cancun.jpg",
+    color: "from-cyan-400 to-blue-600",
+  },
+  {
+    id: 81,
+    name: "Guadalajara",
+    countryId: 17,
+    population: 1495000,
+    description:
+      "Birthplace of mariachi and tequila with colonial architecture",
+    bestTimeToVisit: "October-December",
+    avgTemp: {
+      summer: "22-30°C",
+      winter: "10-25°C",
+    },
+    coordinates: { lat: 20.6597, lng: -103.3496 },
+    popularFor: ["Mariachi", "Tequila", "Historic Center", "Plaza de Armas"],
+    image: "/assets/images/guadalajara.jpg",
+    color: "from-red-600 to-green-600",
+  },
+
+  // Brazil (countryId: 20) - 3 cities
+  {
+    id: 82,
+    name: "Rio de Janeiro",
+    countryId: 20,
+    population: 6748000,
+    description:
+      "Vibrant coastal city famous for Carnival and natural landmarks",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "25-30°C",
+      winter: "18-24°C",
+    },
+    coordinates: { lat: -22.9068, lng: -43.1729 },
+    popularFor: [
+      "Christ the Redeemer",
+      "Copacabana Beach",
+      "Carnival",
+      "Sugarloaf Mountain",
+    ],
+    image: "/assets/images/rio.jpg",
+    color: "from-green-600 to-yellow-500",
+  },
+  {
+    id: 83,
+    name: "São Paulo",
+    countryId: 20,
+    population: 12300000,
+    description: "Financial hub with diverse culture, cuisine, and nightlife",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "22-28°C",
+      winter: "13-22°C",
+    },
+    coordinates: { lat: -23.5505, lng: -46.6333 },
+    popularFor: [
+      "MASP Museum",
+      "Paulista Avenue",
+      "Food Scene",
+      "Cultural Diversity",
+    ],
+    image: "/assets/images/saopaulo.jpg",
+    color: "from-red-600 to-black",
+  },
+  {
+    id: 84,
+    name: "Salvador",
+    countryId: 20,
+    population: 2886698,
+    description:
+      "African cultural capital with colonial architecture and capoeira",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "26-30°C",
+      winter: "21-26°C",
+    },
+    coordinates: { lat: -12.9714, lng: -38.5014 },
+    popularFor: ["Pelourinho", "Capoeira", "African Culture", "Carnival"],
+    image: "/assets/images/salvador.jpg",
+    color: "from-blue-600 to-yellow-500",
+  },
+
+  // Argentina (countryId: 21) - 3 cities
+  {
+    id: 85,
+    name: "Buenos Aires",
+    countryId: 21,
+    population: 2890000,
+    description:
+      "Paris of South America with tango, steak, and European architecture",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "20-30°C",
+      winter: "7-16°C",
+    },
+    coordinates: { lat: -34.6037, lng: -58.3816 },
+    popularFor: ["Tango", "La Boca", "Evita Museum", "Steak Houses"],
+    image: "/assets/images/buenosaires.jpg",
+    color: "from-sky-400 to-white",
+  },
+  {
+    id: 86,
+    name: "Mendoza",
+    countryId: 21,
+    population: 115041,
+    description: "Wine capital at the foothills of the Andes mountains",
+    bestTimeToVisit: "October-April",
+    avgTemp: {
+      summer: "20-32°C",
+      winter: "3-16°C",
+    },
+    coordinates: { lat: -32.8895, lng: -68.8458 },
+    popularFor: [
+      "Wine Tours",
+      "Andes Mountains",
+      "Malbec",
+      "Outdoor Activities",
+    ],
+    image: "/assets/images/mendoza.jpg",
+    color: "from-purple-400 to-blue-600",
+  },
+  {
+    id: 87,
+    name: "Bariloche",
+    countryId: 21,
+    population: 130000,
+    description: "Alpine-style city in Patagonia with lakes and chocolate",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "10-22°C",
+      winter: "-2 to 6°C",
+    },
+    coordinates: { lat: -41.1335, lng: -71.3103 },
+    popularFor: [
+      "Lake Nahuel Huapi",
+      "Skiing",
+      "Chocolate",
+      "Swiss Architecture",
+    ],
+    image: "/assets/images/bariloche.jpg",
+    color: "from-blue-400 to-white",
+  },
+
+  // South Africa (countryId: 25) - 3 cities
+  {
+    id: 88,
+    name: "Cape Town",
+    countryId: 25,
+    population: 433688,
+    description:
+      "Coastal city with Table Mountain, vineyards, and penguin colonies",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "20-27°C",
+      winter: "7-18°C",
+    },
+    coordinates: { lat: -33.9249, lng: 18.4241 },
+    popularFor: [
+      "Table Mountain",
+      "Cape of Good Hope",
+      "Wine Regions",
+      "Penguins",
+    ],
+    image: "/assets/images/capetown.jpg",
+    color: "from-blue-600 to-green-600",
+  },
+  {
+    id: 89,
+    name: "Johannesburg",
+    countryId: 25,
+    population: 957441,
+    description:
+      "Economic hub with Apartheid history and vibrant township culture",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "15-26°C",
+      winter: "4-18°C",
+    },
+    coordinates: { lat: -26.2041, lng: 28.0473 },
+    popularFor: [
+      "Apartheid Museum",
+      "Soweto",
+      "Gold Reef City",
+      "Cultural Diversity",
+    ],
+    image: "/assets/images/johannesburg.jpg",
+    color: "from-green-600 to-gold-500",
+  },
+  {
+    id: 90,
+    name: "Durban",
+    countryId: 25,
+    population: 595061,
+    description: "Warm coastal city with Indian influence and golden beaches",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "23-28°C",
+      winter: "11-23°C",
+    },
+    coordinates: { lat: -29.8587, lng: 31.0218 },
+    popularFor: [
+      "Golden Mile",
+      "Indian Cuisine",
+      "uShaka Marine World",
+      "Warm Climate",
+    ],
+    image: "/assets/images/durban.jpg",
+    color: "from-yellow-500 to-blue-600",
+  },
+
+  // New Zealand (countryId: 32) - 3 cities
+  {
+    id: 91,
+    name: "Auckland",
+    countryId: 32,
+    population: 1657000,
+    description: "City of sails with volcanic hills and twin harbors",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "20-25°C",
+      winter: "8-15°C",
+    },
+    coordinates: { lat: -36.8509, lng: 174.7645 },
+    popularFor: ["Sky Tower", "Harbor Cruises", "Volcanoes", "Maori Culture"],
+    image: "/assets/images/auckland.jpg",
+    color: "from-blue-600 to-red-600",
+  },
+  {
+    id: 92,
+    name: "Queenstown",
+    countryId: 32,
+    population: 16000,
+    description: "Adventure capital with stunning lakes and mountain scenery",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "15-24°C",
+      winter: "0-10°C",
+    },
+    coordinates: { lat: -45.0312, lng: 168.6626 },
+    popularFor: [
+      "Adventure Sports",
+      "Lake Wakatipu",
+      "Skiing",
+      "Lord of the Rings",
+    ],
+    image: "/assets/images/queenstown.jpg",
+    color: "from-emerald-400 to-blue-600",
+  },
+  {
+    id: 93,
+    name: "Wellington",
+    countryId: 32,
+    population: 212700,
+    description: "Windy capital with vibrant arts scene and waterfront",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "16-20°C",
+      winter: "6-12°C",
+    },
+    coordinates: { lat: -41.2865, lng: 174.7762 },
+    popularFor: [
+      "Te Papa Museum",
+      "Cable Car",
+      "Film Industry",
+      "Café Culture",
+    ],
+    image: "/assets/images/wellington.jpg",
+    color: "from-gray-400 to-blue-600",
+  },
+
+  // Turkey (countryId: 37) - 3 cities
+  {
+    id: 94,
+    name: "Istanbul",
+    countryId: 37,
+    population: 15460000,
+    description:
+      "City spanning two continents with Byzantine and Ottoman history",
+    bestTimeToVisit: "April-May, September-October",
+    avgTemp: {
+      summer: "23-28°C",
+      winter: "3-9°C",
+    },
+    coordinates: { lat: 41.0082, lng: 28.9784 },
+    popularFor: ["Hagia Sophia", "Blue Mosque", "Grand Bazaar", "Bosphorus"],
+    image: "/assets/images/istanbul.jpg",
+    color: "from-red-600 to-white",
+  },
+  {
+    id: 95,
+    name: "Cappadocia",
+    countryId: 37,
+    population: 129000,
+    description:
+      "Fairy-tale landscape with cave dwellings and hot air balloons",
+    bestTimeToVisit: "April-June, September-October",
+    avgTemp: {
+      summer: "20-30°C",
+      winter: "-5 to 5°C",
+    },
+    coordinates: { lat: 38.6431, lng: 34.8286 },
+    popularFor: [
+      "Hot Air Balloons",
+      "Cave Hotels",
+      "Underground Cities",
+      "Rock Formations",
+    ],
+    image: "/assets/images/cappadocia.jpg",
+    color: "from-amber-600 to-orange-600",
+  },
+  {
+    id: 96,
+    name: "Antalya",
+    countryId: 37,
+    population: 2426356,
+    description: "Turkish Riviera resort city with ancient ruins and beaches",
+    bestTimeToVisit: "April-June, September-October",
+    avgTemp: {
+      summer: "27-34°C",
+      winter: "6-15°C",
+    },
+    coordinates: { lat: 36.8969, lng: 30.7133 },
+    popularFor: ["Old Town", "Waterfalls", "Roman Harbor", "Beaches"],
+    image: "/assets/images/antalya.jpg",
+    color: "from-blue-400 to-green-600",
+  },
+
+  // Egypt (countryId: 26) - 2 cities
+  {
+    id: 97,
+    name: "Cairo",
+    countryId: 26,
+    population: 9500000,
+    description: "Ancient capital with pyramids, museums, and vibrant bazaars",
+    bestTimeToVisit: "October-April",
+    avgTemp: {
+      summer: "30-35°C",
+      winter: "9-19°C",
+    },
+    coordinates: { lat: 30.0444, lng: 31.2357 },
+    popularFor: [
+      "Pyramids of Giza",
+      "Egyptian Museum",
+      "Khan el-Khalili",
+      "Nile River",
+    ],
+    image: "/assets/images/cairo.jpg",
+    color: "from-red-600 to-black",
+  },
+  {
+    id: 98,
+    name: "Luxor",
+    countryId: 26,
+    population: 506588,
+    description: "Open-air museum with ancient temples and royal tombs",
+    bestTimeToVisit: "October-April",
+    avgTemp: {
+      summer: "30-40°C",
+      winter: "8-23°C",
+    },
+    coordinates: { lat: 25.6872, lng: 32.6396 },
+    popularFor: [
+      "Valley of the Kings",
+      "Karnak Temple",
+      "Luxor Temple",
+      "Ancient History",
+    ],
+    image: "/assets/images/luxor.jpg",
+    color: "from-amber-600 to-yellow-500",
+  },
+
+  // Kenya (countryId: 27) - 2 cities
+  {
+    id: 99,
+    name: "Nairobi",
+    countryId: 27,
+    population: 4397000,
+    description: "Green city in the sun with wildlife parks and modern skyline",
+    bestTimeToVisit: "January-February, June-October",
+    avgTemp: {
+      summer: "20-25°C",
+      winter: "10-20°C",
+    },
+    coordinates: { lat: -1.2921, lng: 36.8219 },
+    popularFor: [
+      "Nairobi National Park",
+      "Giraffe Centre",
+      "Karen Blixen Museum",
+      "Maasai Market",
+    ],
+    image: "/assets/images/nairobi.jpg",
+    color: "from-green-600 to-black",
+  },
+  {
+    id: 100,
+    name: "Mombasa",
+    countryId: 27,
+    population: 1208333,
+    description:
+      "Historic coastal city with Swahili culture and white-sand beaches",
+    bestTimeToVisit: "January-February, June-October",
+    avgTemp: {
+      summer: "26-32°C",
+      winter: "22-28°C",
+    },
+    coordinates: { lat: -4.0435, lng: 39.6682 },
+    popularFor: ["Old Town", "Beaches", "Fort Jesus", "Swahili Culture"],
+    image: "/assets/images/mombasa.jpg",
+    color: "from-blue-600 to-white",
+  },
+  {
+    id: 101,
+    name: "Marrakech",
+    countryId: 28,
+    population: 928850,
+    description:
+      "Red city with bustling souks, palaces, and the famous Jemaa el-Fna square",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "30-38°C",
+      winter: "6-20°C",
+    },
+    coordinates: { lat: 31.6295, lng: -7.9811 },
+    popularFor: [
+      "Jemaa el-Fna",
+      "Medina",
+      "Majorelle Garden",
+      "Atlas Mountains",
+    ],
+    image: "/assets/images/marrakech.jpg",
+    color: "from-red-600 to-orange-600",
+  },
+  {
+    id: 102,
+    name: "Fez",
+    countryId: 28,
+    population: 1112072,
+    description:
+      "Ancient imperial city with the world's oldest university and medieval medina",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "27-35°C",
+      winter: "5-16°C",
+    },
+    coordinates: { lat: 34.0181, lng: -5.0078 },
+    popularFor: [
+      "Fes el Bali",
+      "Al-Qarawiyyin University",
+      "Tanneries",
+      "Medieval Architecture",
+    ],
+    image: "/assets/images/fez.jpg",
+    color: "from-amber-600 to-brown-600",
+  },
+  {
+    id: 103,
+    name: "Chefchaouen",
+    countryId: 28,
+    population: 42987,
+    description:
+      "Blue-painted mountain town in the Rif Mountains with stunning scenery",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "25-32°C",
+      winter: "4-15°C",
+    },
+    coordinates: { lat: 35.1714, lng: -5.2699 },
+    popularFor: [
+      "Blue Streets",
+      "Rif Mountains",
+      "Spanish Mosque",
+      "Photography",
+    ],
+    image: "/assets/images/chefchaouen.jpg",
+    color: "from-blue-400 to-indigo-600",
+  },
+  {
+    id: 104,
+    name: "Arusha",
+    countryId: 29,
+    population: 416442,
+    description:
+      "Gateway to Tanzania's northern safari circuit and Mount Kilimanjaro",
+    bestTimeToVisit: "June-October",
+    avgTemp: {
+      summer: "20-27°C",
+      winter: "14-22°C",
+    },
+    coordinates: { lat: -3.3869, lng: 36.683 },
+    popularFor: [
+      "Safari Gateway",
+      "Mount Kilimanjaro",
+      "Coffee Plantations",
+      "Maasai Culture",
+    ],
+    image: "/assets/images/arusha.jpg",
+    color: "from-green-600 to-yellow-500",
+  },
+  {
+    id: 105,
+    name: "Zanzibar City",
+    countryId: 29,
+    population: 205870,
+    description:
+      "Historic Stone Town with Swahili culture, spice tours, and beautiful beaches",
+    bestTimeToVisit: "June-October",
+    avgTemp: {
+      summer: "27-32°C",
+      winter: "24-29°C",
+    },
+    coordinates: { lat: -6.1659, lng: 39.2026 },
+    popularFor: ["Stone Town", "Spice Tours", "Beaches", "Swahili Culture"],
+    image: "/assets/images/zanzibar.jpg",
+    color: "from-cyan-400 to-blue-600",
+  },
+  {
+    id: 106,
+    name: "Dar es Salaam",
+    countryId: 29,
+    population: 6160000,
+    description:
+      "Commercial capital with vibrant markets, museums, and coastal charm",
+    bestTimeToVisit: "June-October",
+    avgTemp: {
+      summer: "28-33°C",
+      winter: "24-29°C",
+    },
+    coordinates: { lat: -6.7924, lng: 39.2083 },
+    popularFor: [
+      "Kariakoo Market",
+      "National Museum",
+      "Coco Beach",
+      "Cultural Diversity",
+    ],
+    image: "/assets/images/dar_es_salaam.jpg",
+    color: "from-blue-600 to-green-600",
+  },
+  {
+    id: 107,
+    name: "Kigali",
+    countryId: 30,
+    population: 1132686,
+    description:
+      "Clean, green capital city with memorial sites and vibrant markets",
+    bestTimeToVisit: "June-September, December-February",
+    avgTemp: {
+      summer: "20-27°C",
+      winter: "18-25°C",
+    },
+    coordinates: { lat: -1.9441, lng: 30.0619 },
+    popularFor: [
+      "Genocide Memorial",
+      "Clean City",
+      "Local Markets",
+      "Coffee Tours",
+    ],
+    image: "/assets/images/kigali.jpg",
+    color: "from-blue-600 to-green-600",
+  },
+  {
+    id: 108,
+    name: "Musanze",
+    countryId: 30,
+    population: 103068,
+    description: "Base for gorilla trekking in Volcanoes National Park",
+    bestTimeToVisit: "June-September, December-February",
+    avgTemp: {
+      summer: "15-22°C",
+      winter: "12-20°C",
+    },
+    coordinates: { lat: -1.4998, lng: 29.6347 },
+    popularFor: [
+      "Gorilla Trekking",
+      "Volcanoes National Park",
+      "Golden Monkeys",
+      "Lava Caves",
+    ],
+    image: "/assets/images/musanze.jpg",
+    color: "from-green-600 to-gray-600",
+  },
+  {
+    id: 109,
+    name: "Gisenyi",
+    countryId: 30,
+    population: 83623,
+    description: "Lakeside resort town on the shores of Lake Kivu",
+    bestTimeToVisit: "June-September, December-February",
+    avgTemp: {
+      summer: "20-28°C",
+      winter: "18-26°C",
+    },
+    coordinates: { lat: -1.6921, lng: 29.2577 },
+    popularFor: ["Lake Kivu", "Beaches", "Water Sports", "Hot Springs"],
+    image: "/assets/images/gisenyi.jpg",
+    color: "from-blue-400 to-cyan-600",
+  },
+  {
+    id: 110,
+    name: "Cusco",
+    countryId: 22,
+    population: 428450,
+    description: "Ancient Inca capital and gateway to Machu Picchu",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "12-20°C",
+      winter: "0-18°C",
+    },
+    coordinates: { lat: -13.5319, lng: -71.9675 },
+    popularFor: [
+      "Machu Picchu Gateway",
+      "Inca Ruins",
+      "Plaza de Armas",
+      "Andean Culture",
+    ],
+    image: "/assets/images/cusco.jpg",
+    color: "from-amber-600 to-brown-600",
+  },
+  {
+    id: 111,
+    name: "Arequipa",
+    countryId: 22,
+    population: 1008290,
+    description:
+      "White city built from volcanic stone with colonial architecture",
+    bestTimeToVisit: "May-September",
+    avgTemp: {
+      summer: "15-22°C",
+      winter: "5-18°C",
+    },
+    coordinates: { lat: -16.409, lng: -71.5375 },
+    popularFor: [
+      "Santa Catalina Monastery",
+      "Misti Volcano",
+      "Colonial Architecture",
+      "Canyon Country",
+    ],
+    image: "/assets/images/arequipa.jpg",
+    color: "from-white to-gray-400",
+  },
+  {
+    id: 112,
+    name: "Iquitos",
+    countryId: 22,
+    population: 437376,
+    description:
+      "Largest city in the Peruvian Amazon, accessible only by air or river",
+    bestTimeToVisit: "May-October",
+    avgTemp: {
+      summer: "23-31°C",
+      winter: "22-30°C",
+    },
+    coordinates: { lat: -3.7491, lng: -73.2538 },
+    popularFor: [
+      "Amazon River",
+      "Rainforest Tours",
+      "Belén Floating Village",
+      "Wildlife",
+    ],
+    image: "/assets/images/iquitos.jpg",
+    color: "from-green-600 to-blue-600",
+  },
+  {
+    id: 113,
+    name: "Medellín",
+    countryId: 24,
+    population: 2529403,
+    description: "City of eternal spring with innovative urban transformation",
+    bestTimeToVisit: "December-March, June-July",
+    avgTemp: {
+      summer: "22-28°C",
+      winter: "16-24°C",
+    },
+    coordinates: { lat: 6.2442, lng: -75.5812 },
+    popularFor: [
+      "Spring Climate",
+      "Metrocable",
+      "Botero Plaza",
+      "Flower Festival",
+    ],
+    image: "/assets/images/medellin.jpg",
+    color: "from-green-500 to-blue-600",
+  },
+  {
+    id: 114,
+    name: "Cartagena",
+    countryId: 24,
+    population: 914552,
+    description:
+      "Colonial port city with colorful architecture and Caribbean beaches",
+    bestTimeToVisit: "December-April",
+    avgTemp: {
+      summer: "27-32°C",
+      winter: "25-30°C",
+    },
+    coordinates: { lat: 10.391, lng: -75.4794 },
+    popularFor: [
+      "Walled City",
+      "Caribbean Beaches",
+      "Colonial Architecture",
+      "Getsemaní",
+    ],
+    image: "/assets/images/cartagena.jpg",
+    color: "from-yellow-400 to-red-600",
+  },
+  {
+    id: 115,
+    name: "Cali",
+    countryId: 24,
+    population: 2243000,
+    description:
+      "Salsa capital of the world with vibrant nightlife and cultural scene",
+    bestTimeToVisit: "December-March, June-July",
+    avgTemp: {
+      summer: "23-30°C",
+      winter: "19-28°C",
+    },
+    coordinates: { lat: 3.4516, lng: -76.532 },
+    popularFor: [
+      "Salsa Dancing",
+      "Nightlife",
+      "Sugar Cane Fields",
+      "Cultural Festivals",
+    ],
+    image: "/assets/images/cali.jpg",
+    color: "from-red-600 to-yellow-500",
+  },
+  {
+    id: 116,
+    name: "Valparaíso",
+    countryId: 23,
+    population: 296655,
+    description:
+      "Colorful port city with hillside neighborhoods and street art",
+    bestTimeToVisit: "October-March",
+    avgTemp: {
+      summer: "16-20°C",
+      winter: "8-14°C",
+    },
+    coordinates: { lat: -33.0472, lng: -71.6127 },
+    popularFor: ["Colorful Houses", "Street Art", "Funiculars", "Poet's Hill"],
+    image: "/assets/images/valparaiso.jpg",
+    color: "from-purple-400 to-yellow-600",
+  },
+  {
+    id: 117,
+    name: "Puerto Varas",
+    countryId: 23,
+    population: 41255,
+    description: "Lakeside city with German influence and volcano views",
+    bestTimeToVisit: "December-March",
+    avgTemp: {
+      summer: "12-22°C",
+      winter: "2-10°C",
+    },
+    coordinates: { lat: -41.3167, lng: -72.9833 },
+    popularFor: [
+      "Lake Llanquihue",
+      "Osorno Volcano",
+      "German Architecture",
+      "Outdoor Activities",
+    ],
+    image: "/assets/images/puerto_varas.jpg",
+    color: "from-blue-400 to-green-600",
+  },
+  {
+    id: 118,
+    name: "San Pedro de Atacama",
+    countryId: 23,
+    population: 5467,
+    description: "Desert oasis town and gateway to Atacama's natural wonders",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "20-25°C",
+      winter: "5-20°C",
+    },
+    coordinates: { lat: -22.9087, lng: -68.1997 },
+    popularFor: ["Atacama Desert", "Geysers", "Salt Flats", "Stargazing"],
+    image: "/assets/images/san_pedro_atacama.jpg",
+    color: "from-amber-600 to-orange-600",
+  },
+  {
+    id: 119,
+    name: "San José",
+    countryId: 18,
+    population: 333981,
+    description:
+      "Capital city surrounded by mountains with cultural attractions",
+    bestTimeToVisit: "December-April",
+    avgTemp: {
+      summer: "22-27°C",
+      winter: "18-24°C",
+    },
+    coordinates: { lat: 9.9281, lng: -84.0907 },
+    popularFor: [
+      "National Theater",
+      "Gold Museum",
+      "Central Market",
+      "Cultural Hub",
+    ],
+    image: "/assets/images/san_jose_cr.jpg",
+    color: "from-green-600 to-blue-600",
+  },
+  {
+    id: 120,
+    name: "La Fortuna",
+    countryId: 18,
+    population: 15656,
+    description: "Adventure town at the base of Arenal Volcano",
+    bestTimeToVisit: "December-April",
+    avgTemp: {
+      summer: "22-28°C",
+      winter: "20-26°C",
+    },
+    coordinates: { lat: 10.4717, lng: -84.6452 },
+    popularFor: [
+      "Arenal Volcano",
+      "Hot Springs",
+      "Waterfalls",
+      "Adventure Sports",
+    ],
+    image: "/assets/images/la_fortuna.jpg",
+    color: "from-red-600 to-green-600",
+  },
+  {
+    id: 121,
+    name: "Trinidad",
+    countryId: 19,
+    population: 73466,
+    description:
+      "UNESCO colonial town with cobblestone streets and vibrant music scene",
+    bestTimeToVisit: "November-April",
+    avgTemp: {
+      summer: "27-32°C",
+      winter: "20-26°C",
+    },
+    coordinates: { lat: 21.8045, lng: -79.9845 },
+    popularFor: [
+      "Colonial Architecture",
+      "Cobblestone Streets",
+      "Live Music",
+      "Sugar Mills",
+    ],
+    image: "/assets/images/trinidad.jpg",
+    color: "from-yellow-400 to-red-600",
+  },
+  {
+    id: 122,
+    name: "Varadero",
+    countryId: 19,
+    population: 27070,
+    description: "Beach resort town with 20km of white sand beaches",
+    bestTimeToVisit: "November-April",
+    avgTemp: {
+      summer: "28-32°C",
+      winter: "22-26°C",
+    },
+    coordinates: { lat: 23.1394, lng: -81.2861 },
+    popularFor: [
+      "Beaches",
+      "All-Inclusive Resorts",
+      "Water Sports",
+      "Carnival",
+    ],
+    image: "/assets/images/varadero.jpg",
+    color: "from-cyan-400 to-blue-600",
+  },
+  {
+    id: 123,
+    name: "Nadi",
+    countryId: 33,
+    population: 71178,
+    description:
+      "Gateway to Fiji with markets, temples, and access to island resorts",
+    bestTimeToVisit: "May-October",
+    avgTemp: {
+      summer: "25-31°C",
+      winter: "20-28°C",
+    },
+    coordinates: { lat: -17.8, lng: 177.4167 },
+    popularFor: [
+      "Sri Siva Subramaniya Temple",
+      "Garden of the Sleeping Giant",
+      "Island Hopping",
+      "Markets",
+    ],
+    image: "/assets/images/nadi.jpg",
+    color: "from-green-600 to-blue-600",
+  },
+  {
+    id: 124,
+    name: "Denarau Island",
+    countryId: 33,
+    population: 2000,
+    description: "Luxury resort island with golf courses and marina",
+    bestTimeToVisit: "May-October",
+    avgTemp: {
+      summer: "25-31°C",
+      winter: "20-28°C",
+    },
+    coordinates: { lat: -17.775, lng: 177.3833 },
+    popularFor: ["Luxury Resorts", "Golf Courses", "Marina", "Beaches"],
+    image: "/assets/images/denarau.jpg",
+    color: "from-amber-400 to-blue-600",
+  },
+  {
+    id: 125,
+    name: "Goroka",
+    countryId: 34,
+    population: 19523,
+    description:
+      "Highlands town famous for the annual Goroka Show cultural festival",
+    bestTimeToVisit: "May-October",
+    avgTemp: {
+      summer: "20-28°C",
+      winter: "18-26°C",
+    },
+    coordinates: { lat: -6.0833, lng: 145.3833 },
+    popularFor: [
+      "Goroka Show",
+      "Highland Culture",
+      "Tribal Traditions",
+      "Coffee Plantations",
+    ],
+    image: "/assets/images/goroka.jpg",
+    color: "from-red-600 to-yellow-500",
+  },
+  {
+    id: 126,
+    name: "Port Vila",
+    countryId: 35,
+    population: 51437,
+    description:
+      "Capital city with French influence, markets, and waterfront restaurants",
+    bestTimeToVisit: "April-October",
+    avgTemp: {
+      summer: "24-30°C",
+      winter: "20-27°C",
+    },
+    coordinates: { lat: -17.7333, lng: 168.3272 },
+    popularFor: ["Waterfront", "French Cuisine", "Markets", "Mele Cascades"],
+    image: "/assets/images/port_vila.jpg",
+    color: "from-green-600 to-blue-600",
+  },
+  {
+    id: 127,
+    name: "Jeddah",
+    countryId: 38,
+    population: 3976000,
+    description: "Red Sea port city with historic district and modern corniche",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "32-38°C",
+      winter: "19-29°C",
+    },
+    coordinates: { lat: 21.4858, lng: 39.1925 },
+    popularFor: ["Al-Balad", "Red Sea", "King Fahd's Fountain", "Corniche"],
+    image: "/assets/images/jeddah.jpg",
+    color: "from-blue-400 to-green-600",
+  },
+  {
+    id: 128,
+    name: "Al-Ula",
+    countryId: 38,
+    population: 5411,
+    description:
+      "Ancient archaeological site with Nabatean tombs and desert landscapes",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "25-40°C",
+      winter: "10-25°C",
+    },
+    coordinates: { lat: 26.6167, lng: 37.9167 },
+    popularFor: [
+      "Mada'in Saleh",
+      "Desert Landscape",
+      "Rock Formations",
+      "Ancient History",
+    ],
+    image: "/assets/images/al_ula.jpg",
+    color: "from-amber-600 to-red-600",
+  },
+  {
+    id: 129,
+    name: "Abha",
+    countryId: 38,
+    population: 112316,
+    description:
+      "Mountain city in Asir region with cooler climate and traditional architecture",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "20-28°C",
+      winter: "10-20°C",
+    },
+    coordinates: { lat: 18.2167, lng: 42.5053 },
+    popularFor: [
+      "Asir Mountains",
+      "Traditional Architecture",
+      "Cool Climate",
+      "Cultural Heritage",
+    ],
+    image: "/assets/images/abha.jpg",
+    color: "from-green-600 to-blue-600",
+  },
+  {
+    id: 130,
+    name: "Petra",
+    countryId: 39,
+    population: 26400,
+    description: "Ancient Nabatean city carved into rose-red sandstone cliffs",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "25-35°C",
+      winter: "5-15°C",
+    },
+    coordinates: { lat: 30.3285, lng: 35.4444 },
+    popularFor: [
+      "The Treasury",
+      "Siq Canyon",
+      "Ancient Ruins",
+      "Nabatean Architecture",
+    ],
+    image: "/assets/images/petra.jpg",
+    color: "from-rose-600 to-red-600",
+  },
+  {
+    id: 131,
+    name: "Aqaba",
+    countryId: 39,
+    population: 148398,
+    description:
+      "Red Sea resort city with beaches, coral reefs, and water sports",
+    bestTimeToVisit: "March-May, September-November",
+    avgTemp: {
+      summer: "30-38°C",
+      winter: "15-25°C",
+    },
+    coordinates: { lat: 29.5319, lng: 35.0061 },
+    popularFor: [
+      "Red Sea Beaches",
+      "Snorkeling",
+      "Coral Reefs",
+      "Water Sports",
+    ],
+    image: "/assets/images/aqaba.jpg",
+    color: "from-blue-600 to-cyan-400",
+  },
+  {
+    id: 132,
+    name: "Al Khor",
+    countryId: 40,
+    population: 202031,
+    description:
+      "Coastal city with mangrove forests and traditional pearl diving heritage",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "35-42°C",
+      winter: "15-25°C",
+    },
+    coordinates: { lat: 25.6894, lng: 51.5058 },
+    popularFor: ["Mangroves", "Pearl Diving History", "Beaches", "Al Thakira"],
+    image: "/assets/images/al_khor.jpg",
+    color: "from-cyan-400 to-blue-600",
+  },
+  {
+    id: 133,
+    name: "Al Wakrah",
+    countryId: 40,
+    population: 87970,
+    description:
+      "Historic pearling and fishing port with renovated souq and waterfront",
+    bestTimeToVisit: "November-February",
+    avgTemp: {
+      summer: "35-42°C",
+      winter: "15-25°C",
+    },
+    coordinates: { lat: 25.1715, lng: 51.6034 },
+    popularFor: [
+      "Historic Souq",
+      "Fishing Harbor",
+      "Waterfront Park",
+      "Traditional Architecture",
+    ],
+    image: "/assets/images/al_wakrah.jpg",
+    color: "from-maroon-500 to-white",
+  },
 ];
 
 export const attractions = [
@@ -639,12 +3572,19 @@ export const attractions = [
     duration: "2-3 hours",
     bestTimeToVisit: "Morning or Evening",
     description: "Iconic iron tower offering panoramic views of Paris",
-    highlights: ["Views from top", "Sparkling lights at night", "Champ de Mars"],
-    tips: ["Book tickets online to skip queues", "Visit at night for light show"],
+    highlights: [
+      "Views from top",
+      "Sparkling lights at night",
+      "Champ de Mars",
+    ],
+    tips: [
+      "Book tickets online to skip queues",
+      "Visit at night for light show",
+    ],
     coordinates: { lat: 48.8584, lng: 2.2945 },
     rating: 4.7,
     image: "/assets/attractions/eiffel.jpg",
-    openingHours: "9:00 AM - 12:45 AM"
+    openingHours: "9:00 AM - 12:45 AM",
   },
   {
     id: 2,
@@ -655,13 +3595,19 @@ export const attractions = [
     priceRange: "$$",
     duration: "3-4 hours",
     bestTimeToVisit: "Weekday mornings",
-    description: "World's largest art museum housing Mona Lisa and Venus de Milo",
-    highlights: ["Mona Lisa", "Venus de Milo", "Glass Pyramid", "Egyptian Antiquities"],
+    description:
+      "World's largest art museum housing Mona Lisa and Venus de Milo",
+    highlights: [
+      "Mona Lisa",
+      "Venus de Milo",
+      "Glass Pyramid",
+      "Egyptian Antiquities",
+    ],
     tips: ["Buy tickets online", "Use museum map to navigate"],
     coordinates: { lat: 48.8606, lng: 2.3376 },
     rating: 4.8,
     image: "/assets/attractions/louvre.jpg",
-    openingHours: "9:00 AM - 6:00 PM"
+    openingHours: "9:00 AM - 6:00 PM",
   },
   {
     id: 3,
@@ -675,10 +3621,10 @@ export const attractions = [
     description: "Medieval Catholic cathedral on Île de la Cité",
     highlights: ["Gothic Architecture", "Rose Windows", "Gargoyles"],
     tips: ["Check restoration status before visiting"],
-    coordinates: { lat: 48.8530, lng: 2.3499 },
+    coordinates: { lat: 48.853, lng: 2.3499 },
     rating: 4.6,
     image: "/assets/attractions/notredame.jpg",
-    openingHours: "8:00 AM - 6:45 PM"
+    openingHours: "8:00 AM - 6:45 PM",
   },
 
   // Tokyo Attractions
@@ -691,13 +3637,19 @@ export const attractions = [
     priceRange: "Free",
     duration: "1-2 hours",
     bestTimeToVisit: "Early morning",
-    description: "Tokyo's oldest temple in Asakusa with bustling Nakamise shopping street",
-    highlights: ["Kaminarimon Gate", "Main Hall", "Nakamise Street", "Five-story Pagoda"],
+    description:
+      "Tokyo's oldest temple in Asakusa with bustling Nakamise shopping street",
+    highlights: [
+      "Kaminarimon Gate",
+      "Main Hall",
+      "Nakamise Street",
+      "Five-story Pagoda",
+    ],
     tips: ["Try street food on Nakamise Street", "Visit during festivals"],
     coordinates: { lat: 35.7148, lng: 139.7967 },
     rating: 4.5,
     image: "/assets/attractions/sensoji.jpg",
-    openingHours: "6:00 AM - 5:00 PM"
+    openingHours: "6:00 AM - 5:00 PM",
   },
   {
     id: 5,
@@ -708,13 +3660,19 @@ export const attractions = [
     priceRange: "Free",
     duration: "30 minutes",
     bestTimeToVisit: "Evening",
-    description: "World's busiest pedestrian crossing surrounded by neon lights",
-    highlights: ["Scramble crossing", "Hachiko Statue", "Neon signs", "Shopping"],
+    description:
+      "World's busiest pedestrian crossing surrounded by neon lights",
+    highlights: [
+      "Scramble crossing",
+      "Hachiko Statue",
+      "Neon signs",
+      "Shopping",
+    ],
     tips: ["View from Starbucks or nearby buildings", "Visit at night"],
     coordinates: { lat: 35.6595, lng: 139.7004 },
     rating: 4.4,
     image: "/assets/attractions/shibuya.jpg",
-    openingHours: "24/7"
+    openingHours: "24/7",
   },
   {
     id: 6,
@@ -725,13 +3683,19 @@ export const attractions = [
     priceRange: "$$$",
     duration: "2-3 hours",
     bestTimeToVisit: "Sunset",
-    description: "World's tallest tower with observation decks and shopping complex",
-    highlights: ["Tembo Deck", "Tembo Galleria", "Solamachi shopping", "Views of Tokyo"],
+    description:
+      "World's tallest tower with observation decks and shopping complex",
+    highlights: [
+      "Tembo Deck",
+      "Tembo Galleria",
+      "Solamachi shopping",
+      "Views of Tokyo",
+    ],
     tips: ["Book tickets online", "Visit on clear days"],
     coordinates: { lat: 35.7101, lng: 139.8107 },
     rating: 4.6,
     image: "/assets/attractions/skytree.jpg",
-    openingHours: "10:00 AM - 9:00 PM"
+    openingHours: "10:00 AM - 9:00 PM",
   },
 
   // New York Attractions
@@ -750,7 +3714,7 @@ export const attractions = [
     coordinates: { lat: 40.6892, lng: -74.0445 },
     rating: 4.7,
     image: "/assets/attractions/statue.jpg",
-    openingHours: "8:30 AM - 4:00 PM"
+    openingHours: "8:30 AM - 4:00 PM",
   },
   {
     id: 8,
@@ -767,7 +3731,7 @@ export const attractions = [
     coordinates: { lat: 40.7829, lng: -73.9654 },
     rating: 4.8,
     image: "/assets/attractions/centralpark.jpg",
-    openingHours: "6:00 AM - 1:00 AM"
+    openingHours: "6:00 AM - 1:00 AM",
   },
   {
     id: 9,
@@ -778,13 +3742,19 @@ export const attractions = [
     priceRange: "Free",
     duration: "1-2 hours",
     bestTimeToVisit: "Night",
-    description: "Vibrant commercial intersection known for Broadway and billboards",
-    highlights: ["Neon lights", "Broadway theaters", "TKTS booth", "New Year's Eve ball drop"],
+    description:
+      "Vibrant commercial intersection known for Broadway and billboards",
+    highlights: [
+      "Neon lights",
+      "Broadway theaters",
+      "TKTS booth",
+      "New Year's Eve ball drop",
+    ],
     tips: ["Visit at night for lights", "Watch for street performers"],
-    coordinates: { lat: 40.7580, lng: -73.9855 },
+    coordinates: { lat: 40.758, lng: -73.9855 },
     rating: 4.3,
     image: "/assets/attractions/timessquare.jpg",
-    openingHours: "24/7"
+    openingHours: "24/7",
   },
 
   // Rome Attractions
@@ -798,12 +3768,16 @@ export const attractions = [
     duration: "2-3 hours",
     bestTimeToVisit: "Early morning",
     description: "Ancient amphitheater where gladiators fought",
-    highlights: ["Arena floor", "Underground tunnels", "Arch of Constantine views"],
+    highlights: [
+      "Arena floor",
+      "Underground tunnels",
+      "Arch of Constantine views",
+    ],
     tips: ["Buy combined ticket with Roman Forum", "Take guided tour"],
     coordinates: { lat: 41.8902, lng: 12.4922 },
     rating: 4.8,
     image: "/assets/attractions/colosseum.jpg",
-    openingHours: "8:30 AM - 7:00 PM"
+    openingHours: "8:30 AM - 7:00 PM",
   },
   {
     id: 11,
@@ -815,12 +3789,17 @@ export const attractions = [
     duration: "3-4 hours",
     bestTimeToVisit: "Early morning",
     description: "Extensive museum complex including Sistine Chapel",
-    highlights: ["Sistine Chapel", "Raphael Rooms", "Gallery of Maps", "Ancient sculptures"],
+    highlights: [
+      "Sistine Chapel",
+      "Raphael Rooms",
+      "Gallery of Maps",
+      "Ancient sculptures",
+    ],
     tips: ["Book skip-the-line tickets", "Dress modestly"],
     coordinates: { lat: 41.9065, lng: 12.4545 },
     rating: 4.9,
     image: "/assets/attractions/vatican.jpg",
-    openingHours: "9:00 AM - 6:00 PM"
+    openingHours: "9:00 AM - 6:00 PM",
   },
 
   // Bangkok Attractions
@@ -834,12 +3813,20 @@ export const attractions = [
     duration: "2-3 hours",
     bestTimeToVisit: "Morning",
     description: "Former royal residence with stunning architecture",
-    highlights: ["Emerald Buddha", "Phra Maha Monthien", "Wat Phra Kaew", "Royal Pantheon"],
-    tips: ["Dress modestly (covered shoulders/knees)", "Arrive early to avoid crowds"],
-    coordinates: { lat: 13.7500, lng: 100.4916 },
+    highlights: [
+      "Emerald Buddha",
+      "Phra Maha Monthien",
+      "Wat Phra Kaew",
+      "Royal Pantheon",
+    ],
+    tips: [
+      "Dress modestly (covered shoulders/knees)",
+      "Arrive early to avoid crowds",
+    ],
+    coordinates: { lat: 13.75, lng: 100.4916 },
     rating: 4.6,
     image: "/assets/attractions/grandpalace.jpg",
-    openingHours: "8:30 AM - 3:30 PM"
+    openingHours: "8:30 AM - 3:30 PM",
   },
   {
     id: 13,
@@ -851,12 +3838,17 @@ export const attractions = [
     duration: "1-2 hours",
     bestTimeToVisit: "Sunset",
     description: "Temple of Dawn with beautiful porcelain decoration",
-    highlights: ["Central prang", "River views", "Porcelain details", "Sunset views"],
+    highlights: [
+      "Central prang",
+      "River views",
+      "Porcelain details",
+      "Sunset views",
+    ],
     tips: ["Visit at sunset for best photos", "Combine with river cruise"],
     coordinates: { lat: 13.7437, lng: 100.4888 },
     rating: 4.5,
     image: "/assets/attractions/watarun.jpg",
-    openingHours: "8:00 AM - 6:00 PM"
+    openingHours: "8:00 AM - 6:00 PM",
   },
 
   // Sydney Attractions
@@ -870,12 +3862,17 @@ export const attractions = [
     duration: "1-2 hours",
     bestTimeToVisit: "Morning",
     description: "Iconic performing arts center with distinctive sail design",
-    highlights: ["Architecture tour", "Performance venues", "Harbour views", "Bennelong Restaurant"],
+    highlights: [
+      "Architecture tour",
+      "Performance venues",
+      "Harbour views",
+      "Bennelong Restaurant",
+    ],
     tips: ["Take guided tour", "See a performance if possible"],
     coordinates: { lat: -33.8568, lng: 151.2153 },
     rating: 4.8,
     image: "/assets/attractions/opera.jpg",
-    openingHours: "9:00 AM - 5:00 PM"
+    openingHours: "9:00 AM - 5:00 PM",
   },
   {
     id: 15,
@@ -887,12 +3884,17 @@ export const attractions = [
     duration: "2-4 hours",
     bestTimeToVisit: "Summer",
     description: "Famous surf beach with coastal walk to Coogee",
-    highlights: ["Surfing", "Bondi Icebergs pool", "Coastal walk", "Beach culture"],
+    highlights: [
+      "Surfing",
+      "Bondi Icebergs pool",
+      "Coastal walk",
+      "Beach culture",
+    ],
     tips: ["Do Bondi to Coogee walk", "Swim between flags"],
     coordinates: { lat: -33.8915, lng: 151.2767 },
     rating: 4.7,
     image: "/assets/attractions/bondi.jpg",
-    openingHours: "24/7"
+    openingHours: "24/7",
   },
 
   // Dubai Attractions
@@ -906,12 +3908,16 @@ export const attractions = [
     duration: "2-3 hours",
     bestTimeToVisit: "Sunset",
     description: "World's tallest building with observation decks",
-    highlights: ["At the Top observation", "Fountain show view", "Dubai Mall access"],
+    highlights: [
+      "At the Top observation",
+      "Fountain show view",
+      "Dubai Mall access",
+    ],
     tips: ["Book tickets in advance", "Visit at sunset for day/night views"],
     coordinates: { lat: 25.1972, lng: 55.2744 },
     rating: 4.7,
     image: "/assets/attractions/burjkhalifa.jpg",
-    openingHours: "8:30 AM - 11:00 PM"
+    openingHours: "8:30 AM - 11:00 PM",
   },
   {
     id: 17,
@@ -925,10 +3931,10 @@ export const attractions = [
     description: "World's largest shopping mall with entertainment attractions",
     highlights: ["Dubai Aquarium", "Fountain show", "Ice rink", "VR Park"],
     tips: ["Watch fountain show every 30 mins", "Wear comfortable shoes"],
-    coordinates: { lat: 25.1970, lng: 55.2790 },
+    coordinates: { lat: 25.197, lng: 55.279 },
     rating: 4.6,
     image: "/assets/attractions/dubaimall.jpg",
-    openingHours: "10:00 AM - 12:00 AM"
+    openingHours: "10:00 AM - 12:00 AM",
   },
 
   // Barcelona Attractions
@@ -942,12 +3948,17 @@ export const attractions = [
     duration: "2-3 hours",
     bestTimeToVisit: "Morning",
     description: "Gaudí's unfinished masterpiece with unique architecture",
-    highlights: ["Natividad façade", "Gloria façade", "Interior columns", "Towers"],
+    highlights: [
+      "Natividad façade",
+      "Gloria façade",
+      "Interior columns",
+      "Towers",
+    ],
     tips: ["Book tickets months in advance", "Take audio guide"],
     coordinates: { lat: 41.4036, lng: 2.1744 },
     rating: 4.9,
     image: "/assets/attractions/sagrada.jpg",
-    openingHours: "9:00 AM - 6:00 PM"
+    openingHours: "9:00 AM - 6:00 PM",
   },
   {
     id: 19,
@@ -959,12 +3970,17 @@ export const attractions = [
     duration: "2 hours",
     bestTimeToVisit: "Morning",
     description: "Whimsical park designed by Antoni Gaudí",
-    highlights: ["Dragon staircase", "Salamander", "Greek Theatre", "Colonnaded footpath"],
+    highlights: [
+      "Dragon staircase",
+      "Salamander",
+      "Greek Theatre",
+      "Colonnaded footpath",
+    ],
     tips: ["Book timed tickets in advance", "Wear comfortable shoes"],
     coordinates: { lat: 41.4145, lng: 2.1527 },
     rating: 4.6,
     image: "/assets/attractions/parkguell.jpg",
-    openingHours: "9:30 AM - 7:30 PM"
+    openingHours: "9:30 AM - 7:30 PM",
   },
 
   // Bali Attractions
@@ -979,11 +3995,14 @@ export const attractions = [
     bestTimeToVisit: "Sunset",
     description: "Sea temple on cliff edge with Kecak fire dance",
     highlights: ["Cliff views", "Kecak dance", "Sunset", "Monkeys"],
-    tips: ["Watch for monkeys stealing items", "Stay for Kecak dance at sunset"],
-    coordinates: { lat: -8.8292, lng: 115.0850 },
+    tips: [
+      "Watch for monkeys stealing items",
+      "Stay for Kecak dance at sunset",
+    ],
+    coordinates: { lat: -8.8292, lng: 115.085 },
     rating: 4.5,
     image: "/assets/attractions/uluwatu.jpg",
-    openingHours: "9:00 AM - 7:00 PM"
+    openingHours: "9:00 AM - 7:00 PM",
   },
 
   // Athens Attractions
@@ -997,13 +4016,18 @@ export const attractions = [
     duration: "3-4 hours",
     bestTimeToVisit: "Early morning or late afternoon",
     description: "Ancient citadel containing Parthenon and other temples",
-    highlights: ["Parthenon", "Erechtheion", "Propylaea", "Temple of Athena Nike"],
+    highlights: [
+      "Parthenon",
+      "Erechtheion",
+      "Propylaea",
+      "Temple of Athena Nike",
+    ],
     tips: ["Visit early to avoid crowds", "Wear comfortable shoes"],
     coordinates: { lat: 37.9715, lng: 23.7257 },
     rating: 4.8,
     image: "/assets/attractions/acropolis.jpg",
-    openingHours: "8:00 AM - 8:00 PM"
-  }
+    openingHours: "8:00 AM - 8:00 PM",
+  },
 ];
 
 export const hotels = [
@@ -1019,7 +4043,7 @@ export const hotels = [
     location: "Place Vendôme",
     description: "Iconic luxury hotel with legendary service",
     image: "/assets/hotels/ritz.jpg",
-    coordinates: { lat: 48.8674, lng: 2.3295 }
+    coordinates: { lat: 48.8674, lng: 2.3295 },
   },
   {
     id: 2,
@@ -1032,7 +4056,7 @@ export const hotels = [
     location: "Faubourg Saint-Honoré",
     description: "Palace hotel with elegant French style",
     image: "/assets/hotels/bristol.jpg",
-    coordinates: { lat: 48.8700, lng: 2.3186 }
+    coordinates: { lat: 48.87, lng: 2.3186 },
   },
   {
     id: 3,
@@ -1045,7 +4069,7 @@ export const hotels = [
     location: "11th Arrondissement",
     description: "Trendy boutique hotel in former textile factory",
     image: "/assets/hotels/fabric.jpg",
-    coordinates: { lat: 48.8636, lng: 2.3762 }
+    coordinates: { lat: 48.8636, lng: 2.3762 },
   },
 
   // Tokyo Hotels
@@ -1060,7 +4084,7 @@ export const hotels = [
     location: "Shinjuku",
     description: "Famous luxury hotel featured in Lost in Translation",
     image: "/assets/hotels/parkhyatt.jpg",
-    coordinates: { lat: 35.6852, lng: 139.6907 }
+    coordinates: { lat: 35.6852, lng: 139.6907 },
   },
   {
     id: 5,
@@ -1069,11 +4093,16 @@ export const hotels = [
     type: "Business",
     priceRange: "$$",
     rating: 4.2,
-    amenities: ["Restaurant", "Convenience Store", "Free WiFi", "Godzilla Theme"],
+    amenities: [
+      "Restaurant",
+      "Convenience Store",
+      "Free WiFi",
+      "Godzilla Theme",
+    ],
     location: "Shinjuku",
     description: "Popular hotel with Godzilla head on rooftop",
     image: "/assets/hotels/gracery.jpg",
-    coordinates: { lat: 35.6931, lng: 139.7034 }
+    coordinates: { lat: 35.6931, lng: 139.7034 },
   },
 
   // New York Hotels
@@ -1088,7 +4117,7 @@ export const hotels = [
     location: "Fifth Avenue",
     description: "Historic luxury hotel facing Central Park",
     image: "/assets/hotels/plaza.jpg",
-    coordinates: { lat: 40.7644, lng: -73.9746 }
+    coordinates: { lat: 40.7644, lng: -73.9746 },
   },
   {
     id: 7,
@@ -1101,7 +4130,7 @@ export const hotels = [
     location: "NoMad",
     description: "Trendy hotel with stunning skyline views",
     image: "/assets/hotels/arlo.jpg",
-    coordinates: { lat: 40.7465, lng: -73.9858 }
+    coordinates: { lat: 40.7465, lng: -73.9858 },
   },
 
   // Rome Hotels
@@ -1116,8 +4145,8 @@ export const hotels = [
     location: "Spanish Steps",
     description: "Luxury hotel with rooftop views of Rome",
     image: "/assets/hotels/delaville.jpg",
-    coordinates: { lat: 41.9057, lng: 12.4828 }
-  }
+    coordinates: { lat: 41.9057, lng: 12.4828 },
+  },
 ];
 
 export const restaurants = [
@@ -1132,7 +4161,7 @@ export const restaurants = [
     description: "Michelin-starred restaurant in the Eiffel Tower",
     highlights: ["Eiffel Tower views", "Fine dining", "Romantic"],
     image: "/assets/restaurants/julesverne.jpg",
-    location: "Eiffel Tower, 2nd floor"
+    location: "Eiffel Tower, 2nd floor",
   },
   {
     id: 2,
@@ -1144,7 +4173,7 @@ export const restaurants = [
     description: "World's 50 Best restaurant with casual fine dining",
     highlights: ["Seasonal menu", "Natural wines", "Trendy"],
     image: "/assets/restaurants/septime.jpg",
-    location: "11th Arrondissement"
+    location: "11th Arrondissement",
   },
 
   // Tokyo Restaurants
@@ -1158,7 +4187,7 @@ export const restaurants = [
     description: "Legendary sushi restaurant featured in Jiro Dreams of Sushi",
     highlights: ["Omakase", "Michelin 3-star", "Traditional"],
     image: "/assets/restaurants/jiro.jpg",
-    location: "Ginza"
+    location: "Ginza",
   },
   {
     id: 4,
@@ -1170,7 +4199,7 @@ export const restaurants = [
     description: "Famous tonkotsu ramen chain with individual booths",
     highlights: ["Customizable ramen", "24 hours", "Individual booths"],
     image: "/assets/restaurants/ichiran.jpg",
-    location: "Multiple locations"
+    location: "Multiple locations",
   },
 
   // New York Restaurants
@@ -1184,7 +4213,7 @@ export const restaurants = [
     description: "Michelin 3-star seafood restaurant",
     highlights: ["Fresh seafood", "Elegant dining", "Wine pairing"],
     image: "/assets/restaurants/lebernardin.jpg",
-    location: "Midtown"
+    location: "Midtown",
   },
   {
     id: 6,
@@ -1196,8 +4225,8 @@ export const restaurants = [
     description: "Historic deli famous for pastrami sandwiches",
     highlights: ["Pastrami", "Historic", "Casual"],
     image: "/assets/restaurants/katz.jpg",
-    location: "Lower East Side"
-  }
+    location: "Lower East Side",
+  },
 ];
 
 export const activities = [
@@ -1212,7 +4241,7 @@ export const activities = [
     description: "Scenic boat tour along the Seine River",
     highlights: ["Eiffel Tower views", "Notre-Dame", "Parisian bridges"],
     bestTime: "Evening for dinner cruise",
-    image: "/assets/activities/seine.jpg"
+    image: "/assets/activities/seine.jpg",
   },
   {
     id: 2,
@@ -1224,7 +4253,7 @@ export const activities = [
     description: "Explore the artistic neighborhood of Montmartre",
     highlights: ["Sacré-Cœur", "Artist Square", "Moulin Rouge"],
     bestTime: "Morning",
-    image: "/assets/activities/montmartre.jpg"
+    image: "/assets/activities/montmartre.jpg",
   },
 
   // Tokyo Activities
@@ -1238,7 +4267,7 @@ export const activities = [
     description: "Sample fresh seafood and Japanese street food",
     highlights: ["Sushi", "Sea urchin", "Japanese snacks"],
     bestTime: "Morning",
-    image: "/assets/activities/tsukiji.jpg"
+    image: "/assets/activities/tsukiji.jpg",
   },
   {
     id: 4,
@@ -1250,7 +4279,7 @@ export const activities = [
     description: "Over-the-top robot and laser show",
     highlights: ["Robots", "Lasers", "Dancers", "Neon lights"],
     bestTime: "Evening",
-    image: "/assets/activities/robot.jpg"
+    image: "/assets/activities/robot.jpg",
   },
 
   // New York Activities
@@ -1264,7 +4293,7 @@ export const activities = [
     description: "World-class theater production",
     highlights: ["Live theater", "Musicals", "Acting"],
     bestTime: "Evening",
-    image: "/assets/activities/broadway.jpg"
+    image: "/assets/activities/broadway.jpg",
   },
   {
     id: 6,
@@ -1276,8 +4305,8 @@ export const activities = [
     description: "Ferry tour to Liberty Island and Ellis Island",
     highlights: ["Statue of Liberty", "Immigration Museum", "Harbor views"],
     bestTime: "Morning",
-    image: "/assets/activities/statue-tour.jpg"
-  }
+    image: "/assets/activities/statue-tour.jpg",
+  },
 ];
 
 export const travelPackages = [
@@ -1293,11 +4322,11 @@ export const travelPackages = [
       "Eiffel Tower tickets",
       "Seine River cruise",
       "Breakfast daily",
-      "City tour"
+      "City tour",
     ],
     description: "Perfect romantic escape to the City of Lights",
     bestFor: ["Couples", "Honeymoon", "Anniversary"],
-    image: "/assets/packages/paris-romantic.jpg"
+    image: "/assets/packages/paris-romantic.jpg",
   },
   {
     id: 2,
@@ -1311,11 +4340,11 @@ export const travelPackages = [
       "3 nights Osaka",
       "Bullet train tickets",
       "All transfers",
-      "Guided tours"
+      "Guided tours",
     ],
     description: "Classic Japan tour covering major highlights",
     bestFor: ["First-time visitors", "Culture lovers", "Foodies"],
-    image: "/assets/packages/japan-golden.jpg"
+    image: "/assets/packages/japan-golden.jpg",
   },
   {
     id: 3,
@@ -1329,11 +4358,11 @@ export const travelPackages = [
       "4 nights Venice",
       "Train tickets",
       "Vatican tour",
-      "Gondola ride"
+      "Gondola ride",
     ],
     description: "Experience Rome, Florence, and Venice in one trip",
     bestFor: ["History buffs", "Art lovers", "Romantic travel"],
-    image: "/assets/packages/italian-trilogy.jpg"
+    image: "/assets/packages/italian-trilogy.jpg",
   },
   {
     id: 4,
@@ -1347,24 +4376,32 @@ export const travelPackages = [
       "5 nights Chiang Mai",
       "Domestic flights",
       "Island hopping",
-      "Elephant sanctuary"
+      "Elephant sanctuary",
     ],
     description: "Explore Thailand's cities, beaches, and mountains",
     bestFor: ["Adventure", "Beach lovers", "Culture seekers"],
-    image: "/assets/packages/thailand-adventure.jpg"
-  }
+    image: "/assets/packages/thailand-adventure.jpg",
+  },
 ];
 
 // Helper functions to get data
-export const getCountryById = (id) => countries.find(country => country.id === id);
-export const getCityById = (id) => cities.find(city => city.id === id);
-export const getCitiesByCountryId = (countryId) => cities.filter(city => city.countryId === countryId);
-export const getAttractionsByCityId = (cityId) => attractions.filter(attraction => attraction.cityId === cityId);
-export const getHotelsByCityId = (cityId) => hotels.filter(hotel => hotel.cityId === cityId);
-export const getRestaurantsByCityId = (cityId) => restaurants.filter(restaurant => restaurant.cityId === cityId);
-export const getActivitiesByCityId = (cityId) => activities.filter(activity => activity.cityId === cityId);
-export const getContinentById = (id) => continents.find(continent => continent.id === id);
-export const getCountriesByContinentId = (continentId) => countries.filter(country => country.continentId === continentId);
+export const getCountryById = (id) =>
+  countries.find((country) => country.id === id);
+export const getCityById = (id) => cities.find((city) => city.id === id);
+export const getCitiesByCountryId = (countryId) =>
+  cities.filter((city) => city.countryId === countryId);
+export const getAttractionsByCityId = (cityId) =>
+  attractions.filter((attraction) => attraction.cityId === cityId);
+export const getHotelsByCityId = (cityId) =>
+  hotels.filter((hotel) => hotel.cityId === cityId);
+export const getRestaurantsByCityId = (cityId) =>
+  restaurants.filter((restaurant) => restaurant.cityId === cityId);
+export const getActivitiesByCityId = (cityId) =>
+  activities.filter((activity) => activity.cityId === cityId);
+export const getContinentById = (id) =>
+  continents.find((continent) => continent.id === id);
+export const getCountriesByContinentId = (continentId) =>
+  countries.filter((country) => country.continentId === continentId);
 
 // Get popular destinations (top cities)
 export const popularDestinations = [
@@ -1375,10 +4412,10 @@ export const popularDestinations = [
   cities[15],
   cities[18],
   cities[22],
-  cities[24]
-].map(dest => ({
+  cities[24],
+].map((dest) => ({
   ...dest,
   country: getCountryById(dest.countryId)?.name,
   travelers: Math.floor(Math.random() * 3000) + 1500,
-  rating: 4.5 + Math.random() * 0.5
+  rating: 4.5 + Math.random() * 0.5,
 }));

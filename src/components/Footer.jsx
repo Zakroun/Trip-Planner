@@ -7,16 +7,18 @@ import {
   Map,
   ShieldCheck,
   Heart,
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
-  Linkedin,
   Send,
   ArrowUp,
   Download,
   CheckCircle,
 } from "lucide-react";
+import {
+  FaXTwitter,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -241,24 +243,44 @@ export default function Footer() {
                 <div className="flex gap-4">
                   {[
                     {
-                      icon: <Facebook className="w-5 h-5" />,
+                      icon: <FaFacebookF className="w-5 h-5" />,
                       label: "Facebook",
                     },
-                    { icon: <Twitter className="w-5 h-5" />, label: "Twitter" },
                     {
-                      icon: <Instagram className="w-5 h-5" />,
+                      icon: <FaXTwitter className="w-5 h-5" />,
+                      label: "Twitter",
+                    },
+                    {
+                      icon: <FaInstagram className="w-5 h-5" />,
                       label: "Instagram",
                     },
-                    { icon: <Youtube className="w-5 h-5" />, label: "YouTube" },
                     {
-                      icon: <Linkedin className="w-5 h-5" />,
+                      icon: <FaYoutube className="w-5 h-5" />,
+                      label: "YouTube",
+                    },
+                    {
+                      icon: <FaLinkedin className="w-5 h-5" />,
                       label: "LinkedIn",
                     },
                   ].map((social) => (
                     <a
                       key={social.label}
                       href="#"
-                      className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 flex items-center justify-center transition-all duration-300 group"
+                      className={`w-10 h-10 rounded-full bg-gray-800 hover:bg-gradient-to-r 
+                        ${
+                          social.label === "Facebook"
+                            ? "from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
+                            : social.label === "Twitter"
+                            ? "from-sky-500 to-sky-400 hover:from-sky-600 hover:to-sky-500"
+                            : social.label === "Instagram"
+                            ? "from-pink-500 via-purple-500 to-orange-400 hover:from-pink-600 hover:via-purple-600 hover:to-orange-500"
+                            : social.label === "YouTube"
+                            ? "from-red-600 to-red-500 hover:from-red-700 hover:to-red-600"
+                            : social.label === "LinkedIn"
+                            ? "from-blue-700 to-blue-600 hover:from-blue-800 hover:to-blue-700"
+                            : ""
+                        }
+                        flex items-center justify-center transition-all duration-300 group`}
                       aria-label={social.label}
                     >
                       <div className="text-gray-300 group-hover:text-white transition-colors duration-300">

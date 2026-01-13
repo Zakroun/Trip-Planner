@@ -127,11 +127,9 @@ export default function CreateTrip() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
     const totalDays = Math.ceil(
       (new Date(tripData.endDate) - new Date(tripData.startDate)) / (1000 * 60 * 60 * 24)
     );
-
     const newTrip = {
       id: Date.now(),
       destination: tripData.destination,
@@ -155,11 +153,10 @@ export default function CreateTrip() {
       createdAt: new Date().toISOString(),
       image: city?.image || "/assets/images/default-city.jpg"
     };
-
     setTimeout(() => {
       dispatch(addTrip(newTrip));
       setLoading(false);
-      navigate("/mytrips");
+      navigate("/destinations");
     }, 1500);
   };
 
